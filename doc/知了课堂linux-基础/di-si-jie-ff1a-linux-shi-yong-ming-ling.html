@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第四节：Linux实用命令 | Linux基础</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./di-wu-jie-ff1a-centos-ruan-jian-an-zhuang-yu-xie-zai.html" />
+    
+    
+    <link rel="prev" href="./di-san-jie-ff1a-linux-yong-hu-guan-li.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4"
+        data-chapter-title="第四节：Linux实用命令"
+        data-filepath="di-si-jie-ff1a-linux-shi-yong-ming-ling.md"
+        data-basepath="."
+        data-revision="Tue Jun 19 2018 15:42:49 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一节：Linux基础1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="di-er-jie-ff1a-linux-ji-chu-2.html">
+            
+                
+                    <a href="./di-er-jie-ff1a-linux-ji-chu-2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二节：Linux基础2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="di-san-jie-ff1a-linux-yong-hu-guan-li.html">
+            
+                
+                    <a href="./di-san-jie-ff1a-linux-yong-hu-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三节：Linux用户管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="di-si-jie-ff1a-linux-shi-yong-ming-ling.html">
+            
+                
+                    <a href="./di-si-jie-ff1a-linux-shi-yong-ming-ling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四节：Linux实用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="di-wu-jie-ff1a-centos-ruan-jian-an-zhuang-yu-xie-zai.html">
+            
+                
+                    <a href="./di-wu-jie-ff1a-centos-ruan-jian-an-zhuang-yu-xie-zai.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五节：CentOS软件安装与卸载
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di-liu-jie-ff1a-vim-shang-gu-shen-qi.html">
+            
+                
+                    <a href="./di-liu-jie-ff1a-vim-shang-gu-shen-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六节：VIM-上古神器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="di-qi-jie-ff1a-shell-jiao-ben.html">
+            
+                
+                    <a href="./di-qi-jie-ff1a-shell-jiao-ben.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七节：shell脚本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="di-ba-jie-ff1a-iptables.html">
+            
+                
+                    <a href="./di-ba-jie-ff1a-iptables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八节：iptables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="di-jiu-jie-ff1a-zheng-ze-biao-da-shi.html">
+            
+                
+                    <a href="./di-jiu-jie-ff1a-zheng-ze-biao-da-shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第九节：正则表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="di-shi-jie-ff1a-sed-he-awk.html">
+            
+                
+                    <a href="./di-shi-jie-ff1a-sed-he-awk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第十节：sed和awk
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="di-shi-yi-jie-ff1a-lnmp-jia-gou.html">
+            
+                
+                    <a href="./di-shi-yi-jie-ff1a-lnmp-jia-gou.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        第十一节：LNMP架构
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Linux基础</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="linux&#x5B9E;&#x7528;&#x547D;&#x4EE4;">Linux&#x5B9E;&#x7528;&#x547D;&#x4EE4;</h1>
+<h2 id="&#x5B9E;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#xFF08;&#x5199;&#x811A;&#x672C;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF09;">&#x5B9E;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#xFF08;&#x5199;&#x811A;&#x672C;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF09;</h2>
+<p>&#x5982;&#x679C;&#x5728;&#x5DE5;&#x4F5C;&#x4E2D;&#x9047;&#x5230;&#x6545;&#x969C;&#x600E;&#x4E48;&#x5904;&#x7406;</p>
+<ul>
+<li>CPU&#x88AB;&#x5360;&#x6EE1;&#x4E86;&#x600E;&#x4E48;&#x5904;&#x7406;</li>
+<li>&#x5185;&#x5B58;&#x88AB;&#x5360;&#x6EE1;&#x4E86;&#x600E;&#x4E48;&#x5904;&#x7406;</li>
+<li>&#x5E26;&#x5BBD;&#x88AB;&#x5360;&#x6EE1;&#x4E86;&#x600E;&#x4E48;&#x5904;&#x7406;</li>
+<li>&#x78C1;&#x76D8;&#x88AB;&#x5360;&#x6EE1;&#x4E86;&#x600E;&#x4E48;&#x529E; &#x4E8C;&#x79CD;&#x60C5;&#x51B5; &#x7B2C;&#x4E00;&#x79CD;&#x6709;&#x5927;&#x6587;&#x4EF6;&#x5360;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;,&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3; &#x4E00;&#x4E2A;&#x662F;&#x6709;&#x7A0B;&#x5E8F;&#x5728;&#x75AF;&#x72C2;&#x7684;&#x8BFB;&#x5199;&#x78C1;&#x76D8; &#x5BFC;&#x81F4;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x6253;&#x4E0D;&#x5F00;</li>
+</ul>
+<h2 id="shell&#x811A;&#x672C;">shell&#x811A;&#x672C;</h2>
+<p>&#x5B9E;&#x7528;&#x7684;&#x547D;&#x4EE4;
+&#x5C0F;&#x547D;&#x4EE4;</p>
+<ol>
+<li>ping&#xFF1A;&#x6D4B;&#x8BD5;&#x4E3B;&#x673A;&#x662F;&#x5426;&#x5B58;&#x6D3B;</li>
+<li>-c&#xFF1A;&#x6B21;&#x6570;</li>
+<li>-s&#xFF1A;&#x6570;&#x636E;&#x5305;&#x5927;&#x5C0F;</li>
+<li>-i&#xFF1A;&#x95F4;&#x9694;(&#x5355;&#x4F4D;&#x79D2;)<pre><code class="lang-shell">echo 1 &gt;/proc/sys/net/ipv4/icmp_echo_ignore_all &#x7981;ping
+ip addr || ifconfig &#x67E5;&#x770B;&#x7F51;&#x5361; &#x53EF;&#x4EE5;&#x770B;&#x51FA;ip&#x5730;&#x5740;
+</code></pre>
+</li>
+<li><p>nslookup&#xFF1A;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x9700;&#x8981;&#x4F7F;&#x7528; nslookup www.baidu.com 211.157.15.189&#x3002;linux&#x6CA1;&#x6709;&#x81EA;&#x5E26;&#x9700;&#x8981;&#x989D;&#x5916;&#x5B89;&#x88C5;&#x3002;</p>
+</li>
+<li><p>arp&#xFF1A;&#x8D1F;&#x8D23;&#x5C06;ip&#x5730;&#x5740;&#x89E3;&#x6790;&#x6210;mac&#x5730;&#x5740;</p>
+</li>
+<li><p>tracepath&#xFF1A;&#x8DEF;&#x7531;&#x8DDF;&#x8E2A;&#x3002;&#x4F7F;&#x7528;&#x573A;&#x666F;,&#x5F53;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x822C;&#x8FD0;&#x8425;&#x5546;&#x4F1A;&#x8981;&#x4F60;&#x63D0;&#x4F9B;&#x4E00;&#x4EFD;&#x8DEF;&#x7531;&#x8DDF;&#x8E2A;&#x7684;&#x8868; &#x5C31;&#x662F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x5B9E;&#x73B0;
+traceroute 192.168.1.1</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;yum provides */nslookup&#x53CD;&#x67E5;&#xFF1A;&#x67E5;&#x8BE2;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5728;&#x54EA;&#x4E2A;&#x5305;&#x91CC;&#x9762;&#x3002;</p>
+</li>
+</ol>
+<h2 id="top&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x65B9;&#x5F0F;&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x3002;">top&#x4EE5;&#x52A8;&#x6001;&#x7684;&#x65B9;&#x5F0F;&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x3002;</h2>
+<p>top&#x547D;&#x4EE4;&#x662F;Linux&#x4E0B;&#x5E38;&#x7528;&#x7684;&#x6027;&#x80FD;&#x5206;&#x6790;&#x5DE5;&#x5177;&#xFF0C;&#x80FD;&#x591F;&#x5B9E;&#x65F6;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4E2D;&#x5404;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8D44;&#x6E90;&#x5360;&#x7528;&#x72B6;&#x51B5;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;Windows&#x7684;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x5668;&#x3002;
+&#x4E0B;&#x9762;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x5B83;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x3002;
+load average &apos;w&apos; &apos;uptime&apos; &apos;free&apos; &apos;find&apos; &apos;iostat&apos; &apos;/proc&apos; cpuinfo meminfo zoneinfo mouts</p>
+<ol>
+<li>&#x201C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x8C03;&#x67E5;&#x6CD5;&#x5219;&#x201D;&#xFF1A; &#x5982;&#x679C;&#x957F;&#x671F;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x8D1F;&#x8F7D;&#x5728; 0.70 &#x4E0A;&#x4E0B;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4E8B;&#x60C5;&#x53D8;&#x5F97;&#x66F4;&#x7CDF;&#x7CD5;&#x4E4B;&#x524D;&#xFF0C;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x4E86;&#x89E3;&#x5176;&#x539F;&#x56E0;&#x3002;</li>
+<li>&#x201C;&#x73B0;&#x5728;&#x5C31;&#x8981;&#x4FEE;&#x590D;&#x6CD5;&#x5219;&#x201D;&#xFF1A;1.00 &#x3002; &#x5982;&#x679C;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7CFB;&#x7EDF;&#x8D1F;&#x8F7D;&#x957F;&#x671F;&#x5F98;&#x5F8A;&#x4E8E; 1.00&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5E94;&#x8BE5;&#x9A6C;&#x4E0A;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x5C06;&#x534A;&#x591C;&#x63A5;&#x5230;&#x4F60;&#x4E0A;&#x53F8;&#x7684;&#x7535;&#x8BDD;&#xFF0C;&#x8FD9;&#x53EF;&#x4E0D;&#x662F;&#x4EF6;&#x4EE4;&#x4EBA;&#x6109;&#x5FEB;&#x7684;&#x4E8B;&#x60C5;&#x3002;</li>
+<li>&#x201C;&#x51CC;&#x6668;&#x4E09;&#x70B9;&#x534A;&#x953B;&#x70BC;&#x8EAB;&#x4F53;&#x6CD5;&#x5219;&#x201D;&#xFF1A;5.00&#x3002; &#x5982;&#x679C;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8D1F;&#x8F7D;&#x8D85;&#x8FC7;&#x4E86; 5.00 &#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5C06;&#x5931;&#x53BB;&#x4F60;&#x7684;&#x7761;&#x7720;&#xFF0C;&#x8FD8;&#x5F97;&#x5728;&#x4F1A;&#x8BAE;&#x4E2D;&#x8BF4;&#x660E;&#x8FD9;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x603B;&#x4E4B;&#x5343;&#x4E07;&#x4E0D;&#x8981;&#x8BA9;&#x5B83;&#x53D1;&#x751F;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53EF;&#x4EE5;&#x60F3;&#x4E86;&#x3002;&#x5C31;&#x8FC1;&#x79FB;&#x4F60;&#x4EEC;&#x7684;&#x4E1A;&#x52A1;&#x3002;</li>
+</ol>
+<h2 id="&#x5E38;&#x7528;&#x4EA4;&#x4E92;&#x547D;&#x4EE4;">&#x5E38;&#x7528;&#x4EA4;&#x4E92;&#x547D;&#x4EE4;</h2>
+<h3 id="cpu">CPU</h3>
+<ol>
+<li>us&#xFF1A;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x5360;&#x7528;CPU&#x767E;&#x5206;&#x6BD4;</li>
+<li>sy&#xFF1A;&#x5185;&#x6838;&#x7A7A;&#x95F4;&#x5360;&#x7528;CPU&#x767E;&#x5206;&#x6BD4;</li>
+<li>ni&#xFF1A;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x7A7A;&#x95F4;&#x5185;&#x6539;&#x53D8;&#x8FC7;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x8FDB;&#x7A0B;&#x5360;&#x7528;CPU&#x767E;&#x5206;&#x6BD4;</li>
+<li>id&#xFF1A;&#x7A7A;&#x95F2;CPU&#x767E;&#x5206;&#x6BD4;</li>
+<li>wa&#xFF1A;CPU&#x7B49;&#x5F85;&#x78C1;&#x76D8;&#x5199;&#x5165;&#x5B8C;&#x6210;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x770B;&#x5230;wa&#x7279;&#x522B;&#x9AD8;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x822C;&#x8BF4;&#x660E;&#x662F;&#x78C1;&#x76D8;IO&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;iostat&#x7B49;&#x547D;&#x4EE4;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x5206;&#x6790;</li>
+<li>hi&#xFF1A;&#x786C;&#x4E2D;&#x65AD;&#x6D88;&#x8017;&#x65F6;&#x95F4;&#x3002;&#x7531;&#x4E0E;&#x7CFB;&#x7EDF;&#x76F8;&#x8FDE;&#x7684;&#x5916;&#x8BBE;(&#x6BD4;&#x5982;&#x7F51;&#x5361;&#x3001;&#x786C;&#x76D8;)&#x81EA;&#x52A8;&#x4EA7;&#x751F;&#x7684;&#x3002;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x901A;&#x77E5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7CFB;&#x7EDF;&#x5916;&#x8BBE;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#x3002;&#x6BD4;&#x5982;&#x5F53;&#x7F51;&#x5361;&#x6536;&#x5230;&#x6570;&#x636E;&#x5305;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x4E2D;&#x65AD;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x6240;&#x8BF4;&#x7684;&#x4E2D;&#x65AD;&#x6307;&#x7684;&#x662F;&#x786C;&#x7EC8;&#x7AEF;(hardirq)&#x3002;</li>
+<li>si&#xFF1A;&#x8F6F;&#x4E2D;&#x65AD;&#x6D88;&#x8017;&#x65F6;&#x95F4;&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x5B9E;&#x65F6;&#x7CFB;&#x7EDF;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x5E94;&#x8BE5;&#x662F;&#x8D8A;&#x5FEB;&#x8D8A;&#x597D;&#x3002;Linux&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x7279;&#x70B9;&#xFF0C;&#x5F53;&#x4E2D;&#x65AD;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x786C;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x90A3;&#x4E9B;&#x77ED;&#x65F6;&#x95F4;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x800C;&#x5C06;&#x90A3;&#x4E9B;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x653E;&#x5230;&#x4E2D;&#x65AD;&#x4E4B;&#x540E;&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8F6F;&#x4E2D;&#x65AD;(softirq)&#x6765;&#x5B8C;&#x6210;&#x3002;
+&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x7684;U&#x76D8; &#x5728;&#x4F60;&#x5F39;&#x51FA;&#x6765;&#x7684;&#x65F6;&#x5019; &#x6709;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x65F6;&#x95F4; &#x4F46;&#x662F;&#x6709;&#x7684;&#x65F6;&#x5019;&#x975E;&#x5E38;&#x5FEB;&#x3002;</li>
+<li>st: &#x865A;&#x62DF;&#x673A;&#x5077;&#x53D6;&#x65F6;&#x95F4;&#x3002;st&#x7684;&#x540D;&#x5B57;&#x5F88;&#x751F;&#x52A8;&#xFF0C;&#x5077;&#x53D6;&#x3002;&#x3002;&#x3002;&#x662F;&#x4E13;&#x95E8;&#x5BF9;&#x865A;&#x62DF;&#x673A;&#x6765;&#x8BF4;&#x7684;&#xFF0C;&#x4E00;&#x53F0;&#x7269;&#x7406;&#x662F;&#x53EF;&#x4EE5;&#x865A;&#x62DF;&#x5316;&#x51FA;&#x51E0;&#x53F0;&#x865A;&#x62DF;&#x673A;&#x7684;&#x3002;&#x5728;&#x5176;&#x4E2D;&#x4E00;&#x53F0;&#x865A;&#x62DF;&#x673A;&#x4E0A;&#x7528;top&#x67E5;&#x770B;&#x53D1;&#x73B0;st&#x4E0D;&#x4E3A;0&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x672C;&#x6765;&#x6709;&#x8FD9;&#x4E48;&#x591A;&#x4E2A;cpu&#x65F6;&#x95F4;&#x662F;&#x5B89;&#x6392;&#x7ED9;&#x6211;&#x8FD9;&#x4E2A;&#x865A;&#x62DF;&#x673A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x865A;&#x62DF;&#x6280;&#x672F;&#xFF0C;&#x628A;&#x8FD9;&#x4E2A;cpu&#x65F6;&#x95F4;&#x5206;&#x914D;&#x7ED9;&#x4E86;&#x5176;&#x4ED6;&#x7684;&#x865A;&#x62DF;&#x673A;&#x4E86;&#x3002;&#x8FD9;&#x5C31;&#x53EB;&#x505A;&#x5077;&#x53D6;&#x3002;</li>
+<li>Ctrl+L &#x64E6;&#x9664;&#x5E76;&#x4E14;&#x91CD;&#x5199;&#x5C4F;&#x5E55;&#x3002;
+10.h&#x6216;&#x8005;?&#xFF1A;&#x663E;&#x793A;&#x5E2E;&#x52A9;&#x753B;&#x9762;&#xFF0C;&#x7ED9;&#x51FA;&#x4E00;&#x4E9B;&#x7B80;&#x77ED;&#x7684;&#x547D;&#x4EE4;&#x603B;&#x7ED3;&#x8BF4;&#x660E;&#x3002;</li>
+<li>k&#xFF1A;&#x7EC8;&#x6B62;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x3002;&#x7CFB;&#x7EDF;&#x5C06;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x9700;&#x8981;&#x7EC8;&#x6B62;&#x7684;&#x8FDB;&#x7A0B;PID&#xFF0C;&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x8BE5;&#x8FDB;&#x7A0B;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4FE1;&#x53F7;&#x3002;&#x4E00;&#x822C;&#x7684;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;15&#x4FE1;&#x53F7;&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x90A3;&#x5C31;&#x4F7F;&#x7528;&#x4FE1;&#x53F7;9&#x5F3A;&#x5236;&#x7ED3;&#x675F;&#x8BE5;&#x8FDB;&#x7A0B;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x4FE1;&#x53F7;15&#x3002;&#x5728;&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x4E2D;&#x6B64;&#x547D;&#x4EE4;&#x88AB;&#x5C4F;&#x853D;&#x3002;</li>
+<li>m&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x5185;&#x5B58;&#x4FE1;&#x606F;&#x3002;</li>
+<li>t&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x548C;CPU&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;</li>
+<li>c&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x547D;&#x4EE4;&#x540D;&#x79F0;&#x548C;&#x5B8C;&#x6574;&#x547D;&#x4EE4;&#x884C;&#x3002;</li>
+<li>M&#xFF1A;&#x6839;&#x636E;&#x9A7B;&#x7559;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+<li>P&#xFF1A;&#x6839;&#x636E;CPU&#x4F7F;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+<li>T&#xFF1A;&#x6839;&#x636E;&#x65F6;&#x95F4;/&#x7D2F;&#x8BA1;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+<li>W&#xFF1A;&#x5C06;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#x5199;&#x5165;~/.toprc&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x8FD9;&#x662F;&#x5199;top&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x63A8;&#x8350;&#x65B9;&#x6CD5;&#x3002;<pre><code class="lang-shell">USER   &#x542F;&#x52A8;&#x8FDB;&#x7A0B;&#x7528;&#x6237;&#x8EAB;&#x4EFD;
+PID    &#x8FDB;&#x7A0B;&#x53F7;
+%CPU   CPU&#x7684;&#x5229;&#x7528;&#x7387;
+%MEM   &#x5185;&#x5B58;&#x7684;&#x5229;&#x7528;&#x7387;
+VSZ    &#x9884;&#x7559;&#x5206;&#x914D;&#x7684;&#x865A;&#x62DF;&#x5185;&#x5B58;
+RSS    &#x771F;&#x5B9E;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;
+TTY    &#x5728;&#x54EA;&#x4E2A;&#x7EC8;&#x7AEF;&#x542F;&#x7528;&#x7684;&#x8FDB;&#x7A0B;
+STAT   &#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;
+D    &#xFF1A;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;
+R    &#xFF1A;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;
+S    &#xFF1A;&#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x7761;&#x7720;
+T    &#xFF1A;&#x505C;&#x6B62;&#x6216;&#x88AB;&#x8FFD;&#x8E2A;
+Z    &#xFF1A;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;
+X    &#xFF1A;&#x6B7B;&#x6389;&#x7684;&#x8FDB;&#x7A0B;
+&lt;    &#xFF1A;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x7684;&#x8FDB;&#x7A0B;
+nVN  &#xFF1A;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x7684;&#x8FDB;&#x7A0B;
+s    &#xFF1A;&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7EC4;&#xFF0C;&#x4EE3;&#x8868;&#x8FD8;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;
++    &#xFF1A;&#x524D;&#x53F0;&#x8FDB;&#x7A0B;
+START   &#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x65F6;&#x95F4;
+TIME    &#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x4E86;&#x591A;&#x957F;&#x65F6;&#x95F4;
+COMMAND &#x7528;&#x4EC0;&#x4E48;&#x547D;&#x4EE4;&#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;
+</code></pre>
+<h2 id="ps&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;-&#x4EE5;&#x9759;&#x6001;&#x7684;&#x65B9;&#x5F0F;">ps&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x72B6;&#x6001; &#x4EE5;&#x9759;&#x6001;&#x7684;&#x65B9;&#x5F0F;</h2>
+</li>
+<li>-a&#xFF1A;&#x663E;&#x793A;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>-u&#xFF1A;&#x542F;&#x52A8;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x7528;&#x6237;&#x548C;&#x5B83;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x95F4;</li>
+<li>-x&#xFF1A;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x4E2D;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>-ef&#xFF1A;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x7684;&#x7236;&#x5B50;&#x5173;&#x7CFB;</li>
+<li>USER&#xFF1A;--&#x542F;&#x52A8;&#x8FDB;&#x7A0B;&#x7528;&#x6237;&#x8EAB;&#x4EFD;</li>
+<li>PID&#xFF1A;&#xFF0D;&#xFF0D;&#x8FDB;&#x7A0B;&#x53F7;</li>
+<li>%CPU &#xFF0D;&#xFF0D;CPU&#x7684;&#x5229;&#x7528;&#x7387;</li>
+<li>%MEM &#xFF0D;&#xFF0D;&#x5185;&#x5B58;&#x7684;&#x5229;&#x7528;&#x7387;</li>
+<li>VSZ &#xFF0D;&#xFF0D;&#x9884;&#x5206;&#x5206;&#x914D;&#x7684;&#x865A;&#x62DF;&#x5185;&#x5B58;</li>
+<li>RSS &#xFF0D;&#xFF0D;&#x771F;&#x5B9E;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;</li>
+<li>TTY &#xFF0D;&#xFF0D;&#x5728;&#x54EA;&#x4E2A;&#x7EC8;&#x7AEF;&#x542F;&#x7528;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>STAT &#xFF0D;&#xFF0D;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;</li>
+<li>&#xFF24;&#xFF1A;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x7761;&#x7720;</li>
+<li>&#xFF32;&#xFF1A;&#x8FD0;&#x884C;&#x5F53;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>&#xFF33;: &#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x7761;&#x7720;</li>
+<li>T : &#x505C;&#x6B62;&#x6216;&#x88AB;&#x8FFD;&#x8E2A;</li>
+<li>&#xFF3A;&#xFF1A;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;</li>
+<li>X : &#x6B7B;&#x6389;&#x7684;&#x8FDB;&#x7A0B;.&lt;:&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x7684;&#x8FDB;&#x7A0B;&gt;</li>
+<li>n/N&#xFF1A;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>s&#xFF1A;&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7EC4;&#xFF0C;&#x4EE3;&#x8868;&#x8FD8;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;</li>
+<li>&#xFF0B;&#xFF1A;&#x524D;&#x53F0;&#x8FDB;&#x7A0B;</li>
+<li>START &#xFF0D;&#xFF0D;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x65F6;&#x95F4;</li>
+<li>&#xFF34;IME &#xFF0D;&#xFF0D;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x4E86;&#x591A;&#x957F;&#x65F6;&#x95F4;</li>
+<li>COMMAND &#xFF0D;&#xFF0D;&#x7528;&#x4EC0;&#x4E48;&#x547D;&#x4EE4;&#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>ps -elf &#x67E5;&#x770B;&#x7236;&#x5B50;&#x8FDB;&#x7A0B;</li>
+<li>-e &#x663E;&#x793A;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</li>
+<li>-l &#x957F;&#x683C;&#x5F0F;</li>
+<li>-f &#x5168;&#x683C;&#x5F0F;
+&#x627E;&#x51FA;&#x6D88;&#x8017;&#x5185;&#x5B58;&#x6700;&#x591A;&#x7684;&#x524D;10&#x540D;&#x8FDB;&#x7A0B;
+ps -auxf | sort -nr -k 4 | head -10
+&#x627E;&#x51FA;&#x4F7F;&#x7528;CPU&#x6700;&#x591A;&#x7684;&#x524D;10&#x540D;&#x8FDB;&#x7A0B;
+ps -auxf | sort -nr -k 3 | head -10</li>
+</ol>
+<h2 id="netstat-&#x67E5;&#x770B;&#x672C;&#x673A;&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;">netstat &#x67E5;&#x770B;&#x672C;&#x673A;&#x5F00;&#x653E;&#x7684;&#x7AEF;&#x53E3;</h2>
+<p>-t tcp&#x8FDE;&#x63A5;
+-u udp
+-n &#x4E0D;&#x4F5C;&#x53CD;&#x89E3;
+-l &#x4FA6;&#x542C;
+-p &#x8FDB;&#x7A0B;&#x540D;
+-a &#x6240;&#x6709;
+netstat -anp tcp/udp/socket&#x76D1;&#x542C;&#x5217;&#x8868;&#xFF0C;&#x5BF9;&#x5E94;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x5217;&#x8868;&#x3002;
+netstat -tnp tcp&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x72B6;&#x6001;
+netstat -tnlp &#x6240;&#x6709;tcp&#x7684;&#x4FA6;&#x542C;&#x5217;&#x8868;
+netstat -unp udp&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;
+netstat -unlp udp&#x7684;&#x4FA6;&#x542C;&#x5217;&#x8868;
+netstat -tunlp tcp/udp&#x4FA6;&#x542C;&#x4FA6;&#x542C;&#x5217;&#x8868;
+netstat -rn &#x67E5;&#x8BE2;&#x8DEF;&#x7531;&#x8868;
+unix/&#x7C7B;unix&#x4E2D;&#x6709;&#x4E09;&#x79CD;&#x8FDE;&#x63A5;&#xFF1A;
+1.tcp &#x9762;&#x5411;&#x8FDE;&#x63A5;
+2.udp &#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;
+3.socket&#x901A;&#x5E38;&#x4E5F;&#x79F0;&#x4F5C;&quot;&#x5957;&#x63A5;&#x5B57;&quot;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x901A;&#x5E38;&#x901A;&#x8FC7;&quot;&#x5957;&#x63A5;&#x5B57;&quot;&#x5411;&#x7F51;&#x7EDC;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x6216;&#x8005;&#x5E94;&#x7B54;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;</p>
+<h2 id="nmap&#x7F51;&#x7EDC;&#x63A2;&#x6D4B;&#x548C;&#x5B89;&#x5168;&#x626B;&#x63CF;&#x5DE5;&#x5177;">nmap-&#x7F51;&#x7EDC;&#x63A2;&#x6D4B;&#x548C;&#x5B89;&#x5168;&#x626B;&#x63CF;&#x5DE5;&#x5177;</h2>
+<p>&#x8BED;&#x6CD5;
+nmap [Scan Type(s)] [Options]
+&#x63CF;&#x8FF0;
+nmap&#x662F;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x63A2;&#x6D4B;&#x548C;&#x5B89;&#x5168;&#x626B;&#x63CF;&#x7A0B;&#x5E8F;&#xFF0C;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x8005;&#x548C;&#x4E2A;&#x4EBA;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x8F6F;&#x4EF6;&#x626B;&#x63CF;&#x5927;&#x578B;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x83B7;&#x53D6;&#x90A3;&#x53F0;&#x4E3B;&#x673A;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x4EE5;&#x53CA;&#x63D0;&#x4F9B;&#x4EC0;&#x4E48;&#x670D;&#x52A1;&#x7B49;&#x4FE1;&#x606F;&#x3002;nmap&#x652F;&#x6301;&#x5F88;&#x591A;&#x626B;&#x63CF;&#x6280;&#x672F;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;UDP&#x3001;TCP connect()&#x3001;TCP SYN(&#x534A;&#x5F00;&#x626B;&#x63CF;)&#x3001;ftp&#x4EE3;&#x7406;(bounce&#x653B;&#x51FB;)&#x3001;&#x53CD;&#x5411;&#x6807;&#x5FD7;&#x3001;ICMP&#x3001;FIN&#x3001;ACK&#x626B;&#x63CF;&#x3001;&#x5723;&#x8BDE;&#x6811;(Xmas Tree)&#x3001;SYN&#x626B;&#x63CF;&#x548C;null&#x626B;&#x63CF;&#x3002;&#x4ECE;&#x626B;&#x63CF;&#x7C7B;&#x578B;&#x4E00;&#x8282;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x7EC6;&#x8282;&#x3002;nmap&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x901A;&#x8FC7;TCP/IP&#x534F;&#x8BAE;&#x6808;&#x7279;&#x5F81;&#x63A2;&#x6D4B;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF0C;&#x79D8;&#x5BC6;&#x626B;&#x63CF;&#xFF0C;&#x52A8;&#x6001;&#x5EF6;&#x65F6;&#x548C;&#x91CD;&#x4F20;&#x8BA1;&#x7B97;&#xFF0C;&#x5E76;&#x884C;&#x626B;&#x63CF;&#xFF0C;&#x901A;&#x8FC7;&#x5E76;&#x884C;ping&#x626B;&#x63CF;&#x63A2;&#x6D4B;&#x5173;&#x95ED;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x8BF1;&#x9975;&#x626B;&#x63CF;&#xFF0C;&#x907F;&#x5F00;&#x7AEF;&#x53E3;&#x8FC7;&#x6EE4;&#x68C0;&#x6D4B;&#xFF0C;&#x76F4;&#x63A5;RPC&#x626B;&#x63CF;(&#x65E0;&#x987B;&#x7AEF;&#x53E3;&#x5F71;&#x5C04;)&#xFF0C;&#x788E;&#x7247;&#x626B;&#x63CF;&#xFF0C;&#x4EE5;&#x53CA;&#x7075;&#x6D3B;&#x7684;&#x76EE;&#x6807;&#x548C;&#x7AEF;&#x53E3;&#x8BBE;&#x5B9A;&#x3002;
+&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;nmap&#x5728;non-root&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x8F6F;&#x4EF6;&#x7684;&#x8BBE;&#x8BA1;&#x8005;&#x4ED8;&#x51FA;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x52AA;&#x529B;&#x3002;&#x5F88;&#x4E0D;&#x5E78;&#xFF0C;&#x4E00;&#x4E9B;&#x5185;&#x6838;&#x754C;&#x9762;(&#x4F8B;&#x5982;raw socket)&#x9700;&#x8981;&#x5728;root&#x72B6;&#x6001;&#x4E0B;&#x4F7F;&#x7528;&#x3002;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x5C3D;&#x53EF;&#x80FD;&#x5728;root&#x4F7F;&#x7528;nmap&#x3002;
+map&#x8FD0;&#x884C;&#x901A;&#x5E38;&#x4F1A;&#x5F97;&#x5230;&#x88AB;&#x626B;&#x63CF;&#x4E3B;&#x673A;&#x7AEF;&#x53E3;&#x7684;&#x5217;&#x8868;&#x3002;nmap&#x603B;&#x4F1A;&#x7ED9;&#x51FA;well known&#x7AEF;&#x53E3;&#x7684;&#x670D;&#x52A1;&#x540D;(&#x5982;&#x679C;&#x53EF;&#x80FD;)&#x3001;&#x7AEF;&#x53E3;&#x53F7;&#x3001;&#x72B6;&#x6001;&#x548C;&#x534F;&#x8BAE;&#x7B49;&#x4FE1;&#x606F;&#x3002;&#x6BCF;&#x4E2A;&#x7AEF;&#x53E3;&#x7684;&#x72B6;&#x6001;&#x6709;&#xFF1A;open&#x3001;filtered&#x3001;unfiltered&#x3002;open&#x72B6;&#x6001;&#x610F;&#x5473;&#x7740;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x80FD;&#x591F;&#x5728;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x4F7F;&#x7528;accept()&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#x3002;filtered&#x72B6;&#x6001;&#x8868;&#x793A;&#xFF1A;&#x9632;&#x706B;&#x5899;&#x3001;&#x5305;&#x8FC7;&#x6EE4;&#x548C;&#x5176;&#x5B83;&#x7684;&#x7F51;&#x7EDC;&#x5B89;&#x5168;&#x8F6F;&#x4EF6;&#x63A9;&#x76D6;&#x4E86;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x7981;&#x6B62;nmap&#x63A2;&#x6D4B;&#x5176;&#x662F;&#x5426;&#x6253;&#x5F00;&#x3002;unfiltered&#x8868;&#x793A;&#xFF1A;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#x5173;&#x95ED;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x9632;&#x706B;&#x5899;/&#x5305;&#x8FC7;&#x6EE4;&#x8F6F;&#x4EF6;&#x6765;&#x9694;&#x79BB;nmap&#x7684;&#x63A2;&#x6D4B;&#x4F01;&#x56FE;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7AEF;&#x53E3;&#x7684;&#x72B6;&#x6001;&#x57FA;&#x672C;&#x90FD;&#x662F;unfiltered&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5927;&#x591A;&#x6570;&#x88AB;&#x626B;&#x63CF;&#x7684;&#x7AEF;&#x53E3;&#x5904;&#x4E8E;filtered&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x624D;&#x4F1A;&#x663E;&#x793A;&#x5904;&#x4E8E;unfiltered&#x72B6;&#x6001;&#x7684;&#x7AEF;&#x53E3;&#x3002;
+&#x6839;&#x636E;&#x4F7F;&#x7528;&#x7684;&#x529F;&#x80FD;&#x9009;&#x9879;&#xFF0C;nmap&#x4E5F;&#x53EF;&#x4EE5;&#x62A5;&#x544A;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x7684;&#x4E0B;&#x5217;&#x7279;&#x5F81;&#xFF1A;&#x4F7F;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;TCP&#x5E8F;&#x5217;&#x3001;&#x8FD0;&#x884C;&#x7ED1;&#x5B9A;&#x5230;&#x6BCF;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7528;&#x6237;&#x540D;&#x3001;DNS&#x540D;&#x3001;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x662F;&#x5426;&#x662F;&#x6B3A;&#x9A97;&#x5730;&#x5740;&#x3001;&#x4EE5;&#x53CA;&#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#x3002;</p>
+<pre><code class="lang-shell">nmap -p1-65535 (ipaddress) &#x626B;&#x63CF;1-65535&#x6240;&#x6709;&#x7684;&#x7AEF;&#x53E3;&#x5728;IP&#x5730;&#x5740;&#x91CC;&#x9762;  
+nmap -PS 172.16.85.0/24 &#x626B;&#x63CF;&#x7F51;&#x6BB5;&#x4E2D;&#x6240;&#x6709;&#x5DF2;&#x6FC0;&#x6D3B;&#x7684;&#x4E3B;&#x673A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;ip&#x5730;&#x5740;&#x548C;&#x7269;&#x7406;&#x5730;&#x5740;  
+nmap -sO 192.168.1.19 &#x786E;&#x5B9A;&#x76EE;&#x6807;&#x673A;&#x652F;&#x6301;&#x54EA;&#x4E9B;IP&#x534F;&#x8BAE; (TCP&#xFF0C;ICMP&#xFF0C;IGMP&#x7B49;):   &#x7279;&#x522B;&#x6162;
+nmap -O 172.16.85.14 &#x626B;&#x63CF;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;  
+nmap -T4 -A -v 172.16.147.13   &#x5168;&#x9762;&#x626B;&#x63CF;   &#x4E3B;&#x8981;&#x662F;&#x83B7;&#x53D6;&#x8F6F;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x53F7;   &#x5728;&#x4FEE;&#x590D;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x7528;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x67E5;&#x770B;&#x8F6F;&#x4EF6;&#x7248;&#x672C;
+&#x4E4C;&#x4E91;&#x7F51; &#x53D1;&#x5E03;&#x6F0F;&#x6D1E; &#x9488;&#x5BF9;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x6F0F;&#x6D1E; ssh 2.2 2.3 2.6 ssh2.3 &#x6709;&#x6F0F;&#x6D1E;
+</code></pre>
+<p>1000&#x53F0;&#x673A;&#x5668; ssh2.3</p>
+<table>
+<thead>
+<tr>
+<th>&#x670D;&#x52A1;</th>
+<th>&#x7AEF;&#x53E3;&#x53F7;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP</td>
+<td>80</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>443</td>
+</tr>
+<tr>
+<td>Telnet</td>
+<td>23</td>
+</tr>
+<tr>
+<td>FTP</td>
+<td>21</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>22</td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td>25</td>
+</tr>
+<tr>
+<td>POP3</td>
+<td>110</td>
+</tr>
+<tr>
+<td>TOMCAT</td>
+<td>8080</td>
+</tr>
+<tr>
+<td>WIN&#x8FDC;&#x7A0B;&#x767B;&#x5F55;</td>
+<td>3389</td>
+</tr>
+<tr>
+<td>mysqlserver</td>
+<td>3306</td>
+</tr>
+<tr>
+<td>nginx</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x67E5;&#x770B;&#x6D41;&#x91CF;&#x7F51;&#x5361;&#x6D41;&#x91CF;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x6D41;&#x91CF;&#x60C5;&#x51B5;">&#x67E5;&#x770B;&#x6D41;&#x91CF;(&#x7F51;&#x5361;&#x6D41;&#x91CF;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x6D41;&#x91CF;&#x60C5;&#x51B5;)</h2>
+<ol>
+<li>iftop &#x67E5;&#x770B;&#x7F51;&#x5361;&#x6D41;&#x91CF;&#x4F7F;&#x7528; &#x4E0D;&#x80FD;&#x67E5;&#x8BE2;&#x5177;&#x4F53;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x5C11;&#x6D41;&#x91CF;</li>
+<li>nethogs &#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x6D41;&#x91CF; &#x53EF;&#x4EE5;&#x67E5;&#x51FA;&#x7A0B;&#x5E8F;&#x7684;PID
+&#x7528;&#x6CD5; nethogs eth0(&#x5982;&#x679C;&#x5916;&#x7F51;&#x6D41;&#x91CF;&#x5927;&#x5C31;&#x586B;&#x5916;&#x7F51;&#xFF0C;&#x5982;&#x679C;&#x5185;&#x7F51;&#x6D41;&#x91CF;&#x5927;&#x5C31;&#x586B;&#x5185;&#x7F51;)
+&#x901A;&#x8FC7;pid&#x4F7F;&#x7528; ps axu &#x548C;lsof&#x67E5;&#x51FA;&#x8FDB;&#x7A0B; &#x4EE5;&#x53CA;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x9020;&#x6210;&#x7684;</li>
+</ol>
+<h2 id="&#x67E5;&#x770B;&#x78C1;&#x76D8;&#x8BFB;&#x5199;">&#x67E5;&#x770B;&#x78C1;&#x76D8;&#x8BFB;&#x5199;</h2>
+<pre><code class="lang-shell">yum -y install sysstat
+</code></pre>
+<ol>
+<li>iostat -x 1 10 &#x67E5;&#x770B;&#x5F53;&#x524D;&#x78C1;&#x76D8;&#x8BFB;&#x5199; &#x53EA;&#x80FD;&#x67E5;&#x770B;&#x5168;&#x5C40;&#x4E0D;&#x80FD;&#x67E5;&#x770B;&#x5177;&#x4F53;&#x7684;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x5C11;IO</li>
+<li>iotop &#x627E;&#x51FA;&#x4F7F;&#x7528;io&#x6700;&#x9AD8;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</li>
+<li>du -hs /opt &#x67E5;&#x770B;&#x76EE;&#x5F55;&#x5927;&#x5C0F;</li>
+</ol>
+<p>&#x51CC;&#x6668;&#x4E09;&#x70B9; &#x6709;&#x53F0;&#x673A;&#x5668;&#x7684;&#x8BFB;&#x5199;&#x975E;&#x5E38;&#x9AD8; &#x5BFC;&#x81F4;&#x4E1A;&#x52A1;&#x90E8;&#x6B63;&#x5E38;
+&#x627E;&#x51FA;&#x8BFB;&#x5199;&#x6700;&#x9AD8;&#x7684;&#x8FDB;&#x7A0B;&#x51FA;&#x6765; (pid)</p>
+<p>&#x67E5;&#x770B;IO&#x5360;&#x7528;&#x60C5;&#x51B5; dd if=/dev/zero of=/test.dbf bs=8k count=300000
+-o&#xFF1A;&#x53EA;&#x663E;&#x793A;&#x6709;io&#x64CD;&#x4F5C;&#x7684;&#x8FDB;&#x7A0B;
+-b&#xFF1A;&#x6279;&#x91CF;&#x663E;&#x793A;&#xFF0C;&#x65E0;&#x4EA4;&#x4E92;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4F5C;&#x8BB0;&#x5F55;&#x5230;&#x6587;&#x4EF6;&#x3002;
+-n NUM&#xFF1A;&#x663E;&#x793A;NUM&#x6B21;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x975E;&#x4EA4;&#x4E92;&#x5F0F;&#x6A21;&#x5F0F;&#x3002;
+-d SEC&#xFF1A;&#x95F4;&#x9694;SEC&#x79D2;&#x663E;&#x793A;&#x4E00;&#x6B21;&#x3002;
+-p PID&#xFF1A;&#x76D1;&#x63A7;&#x7684;&#x8FDB;&#x7A0B;pid&#x3002;
+-u USER&#xFF1A;&#x76D1;&#x63A7;&#x7684;&#x8FDB;&#x7A0B;&#x7528;&#x6237;&#x3002;
+iotop&#x5E38;&#x7528;&#x5FEB;&#x6377;&#x952E;&#xFF1A; &#x5DE6;&#x53F3;&#x7BAD;&#x5934;&#xFF1A;&#x6539;&#x53D8;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x6309;IO&#x6392;&#x5E8F;&#x3002;
+r&#xFF1A;&#x6539;&#x53D8;&#x6392;&#x5E8F;&#x987A;&#x5E8F;&#x3002;
+o&#xFF1A;&#x53EA;&#x663E;&#x793A;&#x6709;IO&#x8F93;&#x51FA;&#x7684;&#x8FDB;&#x7A0B;&#x3002;
+p&#xFF1A;&#x8FDB;&#x7A0B;/&#x7EBF;&#x7A0B;&#x7684;&#x663E;&#x793A;&#x65B9;&#x5F0F;&#x7684;&#x5207;&#x6362;&#x3002;
+a&#xFF1A;&#x663E;&#x793A;&#x7D2F;&#x79EF;&#x4F7F;&#x7528;&#x91CF;&#x3002;
+q&#xFF1A;&#x9000;&#x51FA;
+ps -ef |&#x4E3B;&#x8FDB;&#x7A0B;&#x7ED9;&#x627E;&#x51FA;&#x6765;</p>
+<p>ss &#x80FD;&#x591F;&#x5FEB;&#x901F;&#x7684;&#x663E;&#x793A;&#x6D3B;&#x52A8;&#x72B6;&#x6001;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+&#x548C;netstat&#x7684;&#x529F;&#x80FD;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#xFF0C;
+&#x4F46;&#x662F;&#x5F53;&#x4F60;&#x670D;&#x52A1;&#x5668;&#x7684;socket&#x8FDE;&#x63A5;&#x6570;&#x91CF;&#x975E;&#x5E38;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;netstat&#x5C31;&#x662F;&#x6D6A;&#x8D39;&#x4F60;&#x7684;&#x751F;&#x547D; ss&#x6700;&#x5927;&#x7684;&#x4F18;&#x52BF;&#x5C31;&#x662F;&#x4ED6;&#x6BD4;netstat&#x5FEB;&#x5F88;&#x591A;
+&#x5E38;&#x7528;&#x547D;&#x4EE4;
+&#x663E;&#x793A;ICP&#x8FDE;&#x63A5; ss -t -a
+&#x663E;&#x793A;sockets &#x6458;&#x8981; ss -s
+&#x5217;&#x51FA;&#x6240;&#x6709;&#x6253;&#x5F00;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x7AEF;&#x53E3; ss -l
+&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;socket ss -pl
+&#x627E;&#x51FA;&#x5957;&#x63A5;&#x5B57;/&#x7AEF;&#x53E3;&#x5E94;&#x7528;&#x7A0B;&#x5E8F; ss -pl|grep 3306
+&#x663E;&#x793A;&#x6240;&#x6709;&#x7684;UDP sockets ss -u -a
+&#x67E5;&#x770B;&#x7531;&#x591A;&#x5C11;&#x4E2A;&#x7528;&#x6237;&#x901A;&#x8FC7;TCP&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x534F;&#x8BAE;&#x8FDE;&#x63A5;&#x6211;&#x7684;&#x670D;&#x52A1;&#x5668;</p>
+<p>lsof &#x67E5;&#x770B;&#x5F53;&#x524D;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x4EF6;
+lsof&#x529F;&#x80FD;&#x4E00;&#x822C;&#x7ED3;&#x5408;ps &#x5DE5;&#x5177;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x811A;&#x672C;</p>
+<p>&#x4F5C;&#x4E1A;:
+&#x628A;&#x6240;&#x6709;&#x7684;&#x547D;&#x4EE4;&#x5168;&#x90E8;&#x6D4B;&#x8BD5;&#x4E00;&#x6B21;
+&#x628A;&#x8FD0;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x622A;&#x56FE;&#x6216;&#x8005;&#x62F7;&#x8D1D;&#x4E0B;&#x6765;&#x53D1;&#x7ED9;&#x6211;
+&#x5199;&#x4E00;&#x4E2A;&#x603B;&#x7ED3;
+&#x4E3E;&#x4F8B;
+&#x5982;&#x679C;CPU&#x9AD8; &#x6211;&#x8981;&#x600E;&#x4E48;&#x505A; &#x953B;&#x70BC;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x601D;&#x8DEF; &#x953B;&#x70BC;&#x81EA;&#x5DF1;&#x5199;&#x6587;&#x6863;&#x7684;&#x80FD;&#x529B;
+&#x5982;&#x679C;IO&#x9AD8;&#x6211;&#x8981;&#x600E;&#x4E48;&#x505A;</p>
+<p>shell&#x811A;&#x672C;
+&#x8BF7;&#x770B;&#x7AE0;&#x8282;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./di-san-jie-ff1a-linux-yong-hu-guan-li.html" class="navigation navigation-prev " aria-label="Previous page: 第三节：Linux用户管理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./di-wu-jie-ff1a-centos-ruan-jian-an-zhuang-yu-xie-zai.html" class="navigation navigation-next " aria-label="Next page: 第五节：CentOS软件安装与卸载"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

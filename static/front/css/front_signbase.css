@@ -1,0 +1,52 @@
+.outer-box {
+    width: 584px;
+    background: white;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.logo-box {
+    text-align: center;
+}
+
+.logo-box img {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.form-group {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.input-group {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.form-button {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.captcha-abdon {
+    padding: 0;
+
+}
+
+.captcha-img {
+    width: 94px;
+    height: 32px;
+    overflow: hidden;
+    cursor: pointer;
+}

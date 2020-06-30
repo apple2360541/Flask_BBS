@@ -1,0 +1,35 @@
+{% extends "front/front_signbase.html" %}
+{% from  "common/_macros.html" import static %}
+{% block title %}登录{% endblock %}
+{% block head %}
+    <script src="{{ static("front/js/signup.js") }}"></script>
+    <link rel="stylesheet" href="{{ static("front/css/front_signbase.css") }}">
+{% endblock %}
+{% block page_title %}知了课堂登录{% endblock %}
+{% block signbox %}
+
+
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="手机号" name="telephone">
+
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="密码" name="password">
+
+    </div>
+    <div class="checkbox">
+        <lable >
+            <input type="checkbox" name="remember" value="1">记住我
+        </lable>
+    </div>
+    <div class="form-button">
+
+        <button class="btn btn-warning btn-block" id="register">立即登录</button>
+    </div>
+    <div class="form-group">
+        <a href="{{ url_for("front.signup") }}" class="signup-link">立即注册</a>
+        <a href="{{ url_for("front.forget") }}" id="front-login" class="forget-link" style="float: right">找回密码</a>
+    </div>
+{% endblock %}

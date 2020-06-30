@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第二节：SQL使用 | SQL使用</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html" />
+    
+    
+    <link rel="prev" href="./di-yi-jie-ff1a-mysql-ru-men.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2"
+        data-chapter-title="第二节：SQL使用"
+        data-filepath="README.md"
+        data-basepath="."
+        data-revision="Wed May 30 2018 12:21:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        MySQL教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="di-yi-jie-ff1a-mysql-ru-men.html">
+            
+                
+                    <a href="./di-yi-jie-ff1a-mysql-ru-men.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一节：MySQL入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二节：SQL使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+            
+                
+                    <a href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三节：mysql的概念以及mysql架构分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+            
+                
+                    <a href="./di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四节：mysql日志管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+            
+                
+                    <a href="./di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五节：MySQL表约束
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+            
+                
+                    <a href="./di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六节：MySQL表的关系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="di-qi-jie-ff1a-mysqlback.html">
+            
+                
+                    <a href="./di-qi-jie-ff1a-mysqlback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七节：mysqlback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+            
+                
+                    <a href="./di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八节：mysqlslave--xstrabackup
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >SQL使用</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="sql&#x4F7F;&#x7528;">SQL&#x4F7F;&#x7528;</h1>
+<p>mysql&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x903B;&#x8F91;&#x5BF9;&#x8C61;
+mysql&#x6709;&#x8FD9;&#x4E48;&#x51E0;&#x79CD;&#x5BF9;&#x8C61;
+mysqld---&gt;&#x5E93;----&gt;&#x8868;----&gt;&#x8BB0;&#x5F55;(&#x7531;&#x884C;&#x548C;&#x5217;&#x7EC4;&#x6210;)&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x4E2D;&#x7684;&#x4E00;&#x5217;&#x53EB;&#x505A;&#x5B57;&#x6BB5;
+&#x4EC0;&#x4E48;&#x662F;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;
+&#x8868;&#x4E0E;&#x8868;&#x53D1;&#x751F;&#x5173;&#x7CFB;&#xFF0C;&#x53EB;&#x5173;&#x7CFB;&#x578B;
+&#x90E8;&#x95E8;&#x8868;&#xFF08;&#x90E8;&#x95E8;ID&#x3001;&#x90E8;&#x95E8;&#x540D;&#x79F0;&#xFF09;
+&#x96C7;&#x5458;&#x8868;&#xFF08;&#x5458;&#x5DE5;ID&#x3001;&#x5458;&#x5DE5;&#x59D3;&#x540D;&#x3001;&#x90E8;&#x95E8;ID&#xFF09;
+&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x77E5;&#x9053;&#x5728;&#x96C7;&#x5458;&#x8868;&#x4E2D;&#x5199;&#x5165;&#x4E86;&#x90E8;&#x95E8;id&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x5728;&#x90E8;&#x95E8;&#x8868;&#x4E2D;&#x4E5F;&#x5B58;&#x5728;&#xFF0C;2&#x4E2A;&#x8868;&#x5C31;&#x901A;&#x8FC7;&#x90E8;&#x95E8;id&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x4E86;</p>
+<h2 id="&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7684;4&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;sql&#x8BED;&#x53E5;&#xFF1A;">&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7684;4&#x79CD;&#x65B9;&#x5F0F;(&#x4F7F;&#x7528;SQL&#x8BED;&#x53E5;)&#xFF1A;</h2>
+<ol>
+<li>&#x67E5;&#x8BE2;&#x6570;&#x636E;(&#x6700;&#x591A;&#x7684;&#x52A8;&#x4F5C;) &#x5C31;&#x662F;&#x67E5;&#x8BE2;&#x6570;&#x636E;</li>
+<li>&#x4FEE;&#x6539;&#x6570;&#x636E;</li>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;</li>
+<li>&#x589E;&#x52A0;&#x6570;&#x636E;</li>
+</ol>
+<h2 id="&#x5E38;&#x89C1;&#x7684;sql&#x6807;&#x51C6;&#xFF1A;">&#x5E38;&#x89C1;&#x7684;SQL&#x6807;&#x51C6;&#xFF1A;</h2>
+<p>mysql=&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#xFF0B;mysql&#x5B98;&#x65B9;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x51C6;
+pl/sql=&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#xFF0B;oracle&#x5B98;&#x65B9;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x51C6;
+Tsql=&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#xFF0B;microsoft&#x5B98;&#x65B9;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x51C6;
+&#x603B;&#x7ED3;:
+&#x6240;&#x6709;&#x5927;&#x5BB6;&#x5728;&#x5B66;&#x4E60;&#x4E00;&#x4E9B;SQL&#x8BED;&#x53E5;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x51FA;&#x73B0; &#x6211;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x5B66;&#x8FC7;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#x6211;&#x57FA;&#x672C;&#x4E5F;&#x80FD;&#x770B;&#x7684;&#x61C2;&#xFF0C;&#x5C31;&#x662F;&#x56E0;&#x4E3A;SQL&#x6709;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#x7684;&#x8BED;&#x53E5;</p>
+<h2 id="&#x5E38;&#x7528;&#x7684;sql&#x8BED;&#x53E5;&#xFF1A;">&#x5E38;&#x7528;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</h2>
+<h3 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;</h3>
+<pre><code class="lang-mysql">mysql&gt; create database ceshi1; #&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;ceshi1
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; show create database ceshi1;  &#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x662F;&#x5982;&#x4F55;&#x5EFA;&#x7ACB;&#x7684;
++----------+-------------------------------------------------------------------+
+| Database | Create Database                                                   |
++----------+-------------------------------------------------------------------+
+| ceshi1   | CREATE DATABASE `ceshi1` /*!40100 DEFAULT CHARACTER SET latin1 */ |
++----------+-------------------------------------------------------------------+
+1 row in set (0.00 sec)
+mysql&gt; create database ceshi2 default charset utf8;  &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x96C6;&#x4E3A;utf-8
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; create database  IF NOT EXISTS ceshi1  default charset utf8; #&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5C31;&#x521B;&#x5EFA;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5C31;&#x544A;&#x8B66;
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql&gt; show warnings;   #&#x67E5;&#x770B;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;waring&#x7684;&#x4FE1;&#x606F;
++-------+------+-------------------------------------------------+
+| Level | Code | Message                                         |
++-------+------+-------------------------------------------------+
+| Note  | 1007 | Can&apos;t create database &apos;ceshi1&apos;; database exists |
++-------+------+-------------------------------------------------+
+1 row in set (0.00 sec)
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x8868;">&#x521B;&#x5EFA;&#x8868;</h3>
+<p>2&#x4E2A;&#x53D8;&#x91CF;
+varchar ----&#x4E0D;&#x5B9A;&#x957F; &#x6BD4;&#x5982;&#x6211;&#x8BBE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E3A;50&#x4E2A;&#x5B57;&#x7B26; &#x90A3;&#x4E48;&#x6211;&#x53EA;&#x5360;&#x7528;&#x4E86;30&#x4E2A;&#x5B57;&#x7B26; &#x90A3;&#x4E48;&#x6570;&#x636E;&#x5E93;&#x7ED9;&#x6211;&#x8BA1;&#x7B97;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x7ED9;&#x6211;&#x7B97;30&#x4E2A;&#x5B57;&#x7B26;
+char ---&#x5B9A;&#x957F; &#x6BD4;&#x5982;&#x6211;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E3A;50&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6211;&#x53EA;&#x5360;&#x7528;&#x4E86;10&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4F46;&#x662F;&#x6570;&#x636E;&#x5E93;&#x8FD8;&#x662F;&#x4F1A;&#x7ED9;&#x6211;&#x7B97;50&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x7A7A;&#x95F4;&#x7684;&#x5360;&#x7528;</p>
+<pre><code class="lang-mysql">mysql&gt; use ceshi1; #&#x8FDB;&#x5165;ceshi1&#x5E93;
+Database changed
+mysql&gt; create table ceshi1.t1(id int,name varchar(50),salary decimal(10,2),dept varchar(50));
+Query OK, 0 rows affected (0.02 sec)
+&#x89E3;&#x6790;: &#x5728;ceshi1&#x5E93;&#x4E2D;&#x521B;&#x5EFA;t1&#x8868; &#x5E76;&#x521B;&#x5EFA;4&#x4E2A;&#x5B57;&#x6BB5;
+1. &#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5; id &#x8BBE;&#x7F6E;int&#x7C7B;&#x578B;
+2. &#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x6BB5; name &#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x957F;&#x5EA6;&#x4E3A;50
+3. &#x7B2C;&#x4E09;&#x4E2A;&#x5B57;&#x6BB5; salary &#x6307;&#x5B9A;&#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x70B9;2&#x4F4D;
+4. &#x7B2C;&#x56DB;&#x4E2A;&#x5B57;&#x6BB5; dept &#x6267;&#x884C;&#x5B57;&#x7B26;&#x957F;&#x5EA6;&#x4E3A;50
+mysql&gt; DESCRIBE t1;  #&#x67E5;&#x770B;&#x8868;&#x7ED3;&#x6784; &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6709;4&#x4E2A;&#x5B57;&#x6BB5;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| id     | int(11)       | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| dept   | varchar(50)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+mysql&gt; select * from ceshi1.t1;        &#x67E5;&#x8BE2;&#x8868;&#x6240;&#x6709;&#x5185;&#x5BB9;
+Empty set (0.00 sec)
+
+mysql&gt; insert into db01.t1 set id=1, name=&apos;zhang3&apos;,salary=5000,dept=&apos;&#x751F;&#x4EA7;&#x90E8;&apos;;  &#x63D2;&#x5165;&#x6570;&#x636E;
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+mysql&gt; select * from ceshi1.t1;  #&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x63D2;&#x5165;&#x8FDB;&#x53BB;&#x4E86;
++------+--------+---------+-----------+
+| id   | name   | salary  | dept      |
++------+--------+---------+-----------+
+|    1 | zhang3 | 5000.00 | &#x751F;&#x4EA7;&#x90E8; |
++------+--------+---------+-----------+
+1 row in set (0.00 sec)
+mysql&gt; show create table ceshi1.t1; #&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x8868;&#x793A;&#x4EFB;&#x4F55;&#x521B;&#x5EFA;&#x7684;
+| Table | Create Table                                                                                                                                                                                        
+| t1    | CREATE TABLE `t1` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `salary` decimal(10,2) DEFAULT NULL,
+  `dept` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1  &#x53EF;&#x4EE5;&#x67E5;&#x51FA;&#x4F7F;&#x7528;&#x795E;&#x6CA1;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x4EE5;&#x53CA;&#x8BED;&#x8A00;&#x7F16;&#x7801;
+1 row in set (0.00 sec)
+
+mysql&gt; create table ceshi1.t2 (                              &#x5217;&#x6570;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E0B;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x8868;
+    -&gt;   `id` int(11) DEFAULT NULL,
+    -&gt;   `name` varchar(50) DEFAULT NULL,
+    -&gt;   `salary` decimal(10,2) DEFAULT NULL,
+    -&gt;   `dept` varchar(50) DEFAULT NULL
+    -&gt; );
+Query OK, 0 rows affected (0.11 sec)
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x7528;&#x6237;&#xFF1A;">&#x521B;&#x5EFA;&#x7528;&#x6237;&#xFF1A;</h3>
+<pre><code class="lang-mysql">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x6237;  user01&#x7528;&#x6237;&#x540D;  123&#x5BC6;&#x7801;
+mysql&gt; create user user01@&apos;localhost&apos; identified by &apos;123&apos;;
+Query OK, 0 rows affected (0.00 sec)
+mysql&gt; set password for user01@&apos;localhost&apos;=password(&apos;123&apos;); --&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;
+mysql&gt; create user u01@&apos;localhost&apos; ;                                        --&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x6237;
+mysql&gt; select user,host,password from mysql.user;    &#xFF0D;&#xFF0D;&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x662F;&#x5426;&#x521B;&#x5EFA;&#x6210;&#x529F;
+| root   | localhost                      | *425F1EBD8227A2B1E01C475B523E27A592CFF59A |
+| root   | vagrant-centos65.vagrantup.com |                                           |
+| root   | 127.0.0.1                      |                                           |
+|        | localhost                      |                                           |
+|        | vagrant-centos65.vagrantup.com |                                           |
+| user01 | localhost                      | *23AE809DDACAF96AF0FD78ED04B6A265E05AA257
+
+mysql&gt; show grants;  #&#x67E5;&#x770B;&#x7528;&#x6237;&#x6743;&#x9650;
+| Grants for root@localhost                                                                                                              |
+| GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;localhost&apos; IDENTIFIED BY PASSWORD &apos;*425F1EBD8227A2B1E01C475B523E27A592CFF59A&apos; WITH GRANT OPTION |
+1 row in set (0.00 sec)
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x8868;&#x5E93;&#xFF1A;">&#x5220;&#x9664;&#x8868;/&#x5E93;&#xFF1A;</h3>
+<pre><code class="lang-mysql">&#x5220;&#x9664;&#x8868;/&#x5E93;  
+mysql&gt; use ceshi1 
+mysql&gt; show tables;
+mysql&gt; drop table t1;  --&#x5220;&#x9664;&#x8868;
+mysql&gt;  drop table t2;  
+
+mysql&gt; use ceshi1 --&#x9A8C;&#x8BC1;&#x8868;&#x662F;&#x5426;&#x5220;&#x9664;&#x6210;&#x529F;
+mysql&gt; show tables
+mysql&gt; drop database ceshi1;    --&#x5220;&#x9664;&#x5E93;
+Query OK, 0 rows affected (0.00 sec)
+mysql&gt; drop database ceshi1 ;
+mysql&gt; show databases;  --&#x9A8C;&#x8BC1;&#x5E93;&#x662F;&#x5426;&#x5220;&#x9664;&#x6210;&#x529F;
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x7528;&#x6237;&#xFF1A;">&#x5220;&#x9664;&#x7528;&#x6237;&#xFF1A;</h3>
+<pre><code class="lang-mysql">mysql&gt; drop user user01@&apos;localhost&apos;;    --&#x5220;&#x9664;&#x7528;&#x6237;
+Query OK, 0 rows affected (0.00 sec)
+mysql&gt; select user from mysql.user where user=&apos;user01&apos;; --&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x662F;&#x5426;&#x5220;&#x9664;&#x6210;&#x529F;
+mysql&gt; drop user &apos;&apos;@&apos;192.168.1.1&apos;;            &#x5220;&#x9664;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x7528;&#x6237;
+</code></pre>
+<h3 id="&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#xFF1A;">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#xFF1A;</h3>
+<pre><code class="lang-mysql">mysql&gt; ALTER DATABASE db01 DEFAULT CHARACTER SET latin1;    &#xFF0D;&#xFF0D;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x8BED;&#x8A00;&#x7F16;&#x7801;
+Query OK, 1 row affected (0.05 sec)
+
+mysql&gt; show create database db01;       &#xFF0D;&#xFF0D;&#x9A8C;&#x8BC1;&#x4FEE;&#x6539;&#x662F;&#x5426;&#x6210;&#x529F;
+</code></pre>
+<h3 id="&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5C5E;&#x6027;&#xFF1A;">&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5C5E;&#x6027;&#xFF1A;</h3>
+<pre><code class="lang-mysql">&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5C5E;&#x6027;&#xFF1A;
+mysql&gt; create table t2(name varchar(50));
+mysql&gt; ALTER TABLE t2 ADD id int FIRST;     --&#x589E;&#x52A0;&#x4E00;&#x5217;&#x6210;&#x4E3A;&#x7B2C;&#x4E00;&#x5217;
+mysql&gt; ALTER TABLE t2 add id2 int AFTER id;     --&#x5728;id&#x540E;&#x9762;&#x589E;&#x52A0;&#x4E00;&#x5217;&#x53EB;id2
+mysql&gt; alter table t2 drop id2;             --&#x5220;&#x9664;id2&#x8FD9;&#x4E2A;&#x5217;
+mysql&gt; alter table t2 change id ID bigint;      --&#x4FEE;&#x6539;&#x5217;&#x540D;&#x548C;&#x6570;&#x636E;&#x7C7B;&#x578B;
+mysql&gt; alter table t2 modify ID int;                --&#x4FEE;&#x6539;&#x5217;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;
+mysql&gt; alter table t2 rename t20;               --&#x91CD;&#x547D;&#x540D;&#x8868;
+mysql&gt;show engines;                     --&#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x6709;&#x54EA;&#x4E9B;&#x5B58;&#x50A8;&#x5F15;&#x64CE;
+mysql&gt; alter table t20 engine MyISAM;           --&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;
+mysql&gt; show create table t20;                   --&#x67E5;&#x770B;&#x4FEE;&#x6539;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x662F;&#x5426;&#x6210;&#x529F;
+mysql&gt; alter table t20 DEFAULT CHARSET=utf8;    &#xFF0D;&#xFF0D;&#x4FEE;&#x6539;&#x8868;&#x7684;&#x8BED;&#x8A00;&#x7F16;&#x7801;
+</code></pre>
+<h3 id="insert&#x63D2;&#x5165;&#x8BB0;&#x5F55;&#xFF1A;">insert&#x63D2;&#x5165;&#x8BB0;&#x5F55;&#xFF1A;</h3>
+<pre><code class="lang-mysql">mysql&gt; insert into ceshi1.t1 set id=1,name=&apos;zhang3&apos;;                --&#x5411;&#x6307;&#x5B9A;&#x5217;&#x63D2;&#x5165;&#x6570;&#x636E;
+mysql&gt; insert into ceshi1.t1 values(2,&apos;li4&apos;),(3,&apos;wang5&apos;),(4,&apos;zhao6&apos;);   --&#x63D2;&#x5165;&#x591A;&#x6761;&#x8BB0;&#x5F55;
+mysql&gt;  insert into ceshi1.t1(NAME) values(&apos;test01&apos;),(&apos;test02&apos;),(&apos;test03&apos;); --&#x4E0D;&#x5199;&#x5217;&#x540D;&#xFF0C;&#x8868;&#x793A;&#x6309;&#x987A;&#x5E8F;&#x5F80;&#x6240;&#x6709;&#x7684;&#x5217;&#x63D2;&#x5165;&#x6570;&#x636E;
+mysql&gt; select * from ceshi1.t1 where id<5; 查出前4张表="" mysql=""> insert into ceshi1.t2 select * from ceshi1.t1 where id<5; 查出前4张表，插入到当前表（注意表结构要一致）="" mysql=""> rename tables t1 to t01;
+</5;></5;></code></pre>
+<h3 id="update-&#x66F4;&#x65B0;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#xFF1A;">update &#x66F4;&#x65B0;/&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#xFF1A;</h3>
+<pre><code class="lang-shell">mysql&gt; update db01.t1 set id=5 where NAME=&apos;test01&apos;;
+mysql&gt; update db01.t1 set id=6 where NAME=&apos;test02&apos;;
+mysql&gt; update db01.t1 set id=7 where NAME=&apos;test03&apos;;
+</code></pre>
+<h3 id="deletetruncate-&#x5220;&#x9664;&#x548C;&#x6E05;&#x7A7A;&#x8868;&#xFF1A;">delete/truncate &#x5220;&#x9664;&#x548C;&#x6E05;&#x7A7A;&#x8868;&#xFF1A;</h3>
+<pre><code class="lang-shell">mysql&gt; delete from mysql.user where user=&apos;&apos;;        &#xFF0D;&#xFF0D;&#x5220;&#x9664;mysql&#x4E2D;&#x7684;&#x533F;&#x540D;&#x7528;&#x6237;
+mysql&gt; flush privileges;
+
+mysql&gt; create table t3 like t1;             &#x590D;&#x5236;&#x8868;&#x7ED3;&#x6784;&#x4E0D;&#x590D;&#x5236;&#x6570;&#x636E;
+mysql&gt; insert into t3 select * from t1;
+mysql&gt; delete from t3;                          --&#x5220;&#x9664;&#x6574;&#x4E2A;&#x8868;,&#x4E00;&#x884C;&#x4E00;&#x884C;&#x5220;&#x9664;,&#x6240;&#x6709;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x81F3;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;&#x4E2D;
+mysql&gt; insert into t3 select * from t1;
+mysql&gt; delete from t3 where id=1;       --&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x5220;&#x9664;
+
+mysql&gt; truncate from t2 where id=2;             --&#x62A5;&#x9519;
+
+mysql&gt; truncate t2;                                     --&#x4E00;&#x6B21;&#x6027;&#x5168;&#x90E8;&#x5220;&#x9664;,&#x4E0D;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x81F3;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;&#x4E2D;.
+</code></pre>
+<h3 id="&#x67E5;&#x8BE2;&#x8BED;&#x53E5;-select&#x67E5;&#x8BE2;&#xFF1A;">&#x67E5;&#x8BE2;&#x8BED;&#x53E5; select--&#x67E5;&#x8BE2;&#xFF1A;</h3>
+<ol>
+<li>&#x901A;&#x914D;&#x7B26;&#xFF1A;<ul>
+<li>%&#xFF1A;&#x5339;&#x914D;0&#x4E2A;&#x6216;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x5B57;&#x7B26;</li>
+<li>_&#xFF1A;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</li>
+<li>&#xFF1D;&#xFF1A;&#x7CBE;&#x786E;&#x5339;&#x914D;</li>
+<li>like&#xFF1A;&#x6A21;&#x7CCA;&#x5339;&#x914D;</li>
+<li>regexp(^  .  .* .....)&#xFF1A;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x5339;&#x914D;</li>
+</ul>
+</li>
+<li><p>&#x6392;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li>order by&#xFF1A;&#x6392;&#x5E8F;<ul>
+<li>asc&#xFF1A;&#x5347;&#x5E8F;&#x6392;&#x5217;&#x7ED3;&#x679C;&#x3002;</li>
+<li>desc&#xFF1A;&#x964D;&#x5E8F;&#x6392;&#x5217;&#x7ED3;&#x679C;&#x3002;</li>
+</ul>
+</li>
+<li>group by&#xFF1A;&#x805A;&#x5408;&#x3002;</li>
+<li>distinct&#xFF1A;&#x53BB;&#x9664;&#x91CD;&#x590D;&#x7684;&#x884C;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x805A;&#x5408;&#x51FD;&#x6570;&#xFF1A;</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT</td>
+<td>&#x8BA1;&#x7B97;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x884C;&#x6570;&#xFF09;</td>
+</tr>
+<tr>
+<td>SUM</td>
+<td>&#x8BA1;&#x7B97;&#x8868;&#x4E2D;&#x6570;&#x503C;&#x5217;&#x7684;&#x6570;&#x636E;&#x5408;&#x8BA1;&#x503C;</td>
+</tr>
+<tr>
+<td>AVG</td>
+<td>&#x8BA1;&#x7B97;&#x8868;&#x4E2D;&#x6570;&#x503C;&#x5217;&#x7684;&#x6570;&#x636E;&#x5E73;&#x5747;&#x503C;</td>
+</tr>
+<tr>
+<td>MAX</td>
+<td>&#x6C42;&#x51FA;&#x8868;&#x4E2D;&#x4EFB;&#x610F;&#x5217;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x503C;</td>
+</tr>
+<tr>
+<td>MIN</td>
+<td>&#x6C42;&#x51FA;&#x8868;&#x4E2D;&#x4EFB;&#x610F;&#x5217;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x6700;&#x5C0F;&#x503C;</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>&#x67E5;&#x627E;&#x6848;&#x4F8B;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-shell">    mysql&gt; select  * from t1  id;
+
+    mysql&gt; select * from t1  id having id <= 2;="" gruop="" by="" 不能用where语句="" 用having语句="" mysql=""> use ceshi2
+    mysql&gt; create table ceshi2.t1(id int ,name varchar(50) ,math tinyint, english tinyint);
+
+    mysql&gt; insert into ceshi2.t1 set id=1,name=&apos;zhangsan&apos;,math=55,english=66;
+    mysql&gt; insert into ceshi2.t1 set id=2,name=&apos;lisi&apos;,math=66,english=77;
+    mysql&gt; insert into ceshi2.t1 set id=3,name=&apos;wangwu&apos;,math=65,english=30;
+    mysql&gt; insert into ceshi2.t1 set id=2,name=&apos;li04&apos;,math=88,english=99;
+    mysql&gt; insert into ceshi2.t1 set id=3,name=&apos;wang5&apos;,math=75,english=73;
+    mysql&gt; insert into ceshi2.t1 set id=4,name=&apos;zhao6&apos;,math=75,english=73;
+    mysql&gt; insert into ceshi2.t1 set id=5,name=&apos;liu3&apos;,math=85,english=43;
+
+
+    mysql&gt; select * from ceshi2.t1;     --&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5217;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF08;&#x5168;&#x8868;&#x626B;&#x63CF;&#xFF09;
+    mysql&gt; select id,name from t1;       --&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x5217;
+    mysql&gt; select host,password,user from mysql.user;       --&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x5217;
+    mysql&gt; select host as &apos;&#x4E3B;&#x673A;&#x540D;&apos;,password as &apos;&#x5BC6;&#x7801;&apos;,user as &apos;&#x7528;&#x6237;&#x540D;&apos; from mysql.user; --&#x7ED9;&#x5217;&#x53D6;&#x522B;&#x540D;&#xFF0C;&#x589E;&#x52A0;&#x53EF;&#x8BFB;&#x6027;
+    mysql&gt; select * from t1 where name=&apos;i&apos;;
+    mysql&gt; select * from t1 where name like &apos;i&apos;;
+    mysql&gt; select * from t1 where name like &apos;%i%&apos;;      --&#x6A21;&#x7CCA;&#x5339;&#x914D;
+    mysql&gt; select * from t1 where name like &apos;____&apos;;
+
+    mysql&gt; select * from t1 where id=2;
+    mysql&gt; select * from t1 where name=&apos;wang5&apos;;     --&#x7CBE;&#x786E;&#x5339;&#x914D;
+    mysql&gt; select * from t1 where english &lt; 60;
+
+    mysql&gt; select * from t1 where name regexp &apos;.*[0-9]?.*&apos; ;            --&#x652F;&#x6301;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;
+    mysql&gt; select * from t1 where name regexp &apos;.*[0-9]+.*&apos; ;        &#x4EFB;&#x610F;&#x6570;&#x5B57;&#x4E00;&#x6B21;&#x6216;&#x4E00;&#x6B21;&#x4EE5;&#x4E0A;
+    mysql&gt; select * from t1 where name regexp &apos;.*[0-9]{2}.*&apos; ;
+
+    mysql&gt; select user,password,host from mysql.user where host  regexp &apos;^l&apos;;   --&#x652F;&#x6301;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;
+    mysql&gt; select user,password,host from mysql.user where host regexp &apos;([0-9]{1,3}\.){3}([0-9]{1,3})&apos;;
+
+    &#x6392;&#x5E8F;
+    mysql&gt; select * from t1 where name regexp &apos;.*[0-9]?.*&apos; order by id asc;     &#x5347;&#x5E8F;
+
+    mysql&gt; select * from t1 where name regexp &apos;.*[0-9]?.*&apos; order by id desc;      &#x964D;&#x5E8F;  
+
+    &#x53BB;&#x9664;&#x91CD;&#x590D;&#x884C; distinct
+    mysql&gt; select distinct id from t1 ;
+
+    &#x805A;&#x5408; group by  &#x805A;&#x5408;&#x4EE5;&#x7B2C;&#x4E00;&#x4E2A;&#x4E3A;&#x6807;&#x51C6;
+    mysql&gt; select  * from t1 group by id;
+
+    mysql&gt; select * from t1 group by id having id </=></code></pre>
+<ol>
+<li><p>&#x5206;&#x9875;&#x51FD;&#x6570;(limint)&#x6307;&#x5B9A;&#x53EA;&#x663E;&#x793A;&#x524D;&#x51E0;&#x6761;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-shell"> mysql&gt; select * from t1 limit 10;               --&#x663E;&#x793A;&#x524D;10&#x884C;
+ mysql&gt; select * from t1 limit 10,10;            --&#x663E;&#x793A;11&#x81F3;20&#x884C;
+
+ mysql&gt; select * from t1 limit 1;       &#x663E;&#x793A;&#x7B2C;1&#x884C; 
+ mysql&gt; select * from t1 limit 0,2;      &#x663E;&#x793A;&#x7B2C;1,2&#x884C; 
+
+ mysql&gt; select * from t1 limit 2,2;      &#x663E;&#x793A;3,4&#x884C;
+ &#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x504F;&#x79FB;&#x91CF;  &#x7B2C;&#x4E8C;&#x884C;&#x7684;&#x4E0B;2&#x884C;
+ mysql&gt; select * from t1 limit 4,2;      &#x663E;&#x793A;5,6&#x884C;
+ mysql&gt; select * from t1 limit 6,2;      &#x663E;&#x793A;&#x7B2C;&#x4E03;&#x884C;
+</code></pre>
+<pre><code class="lang-shell"> mysql&gt; select * from t1 order by english desc limit 3;      
+&#x663E;&#x793A;&#x82F1;&#x8BED;&#x524D;&#x4E09;&#x540D;
+ mysql&gt; select name,(math+english) as sum from t1 order by sum desc;
+ &#x663E;&#x793A;&#x603B;&#x5206;&#xFF0C;&#x4EE5;&#x964D;&#x5E8F;&#x6392;&#x5217;
+ mysql&gt; select name,(math+english) as sum from t1 order by sum desc limit 1;
+ &#x663E;&#x793A;&#x603B;&#x5206;&#x7B2C;&#x4E00;&#x540D;
+ mysql&gt; select name,max((math+english)) from t1;
+ &#x663E;&#x793A;&#x603B;&#x5206;&#x7B2C;&#x4E00;&#x540D;
+ mysql&gt;  select name,max(math+english) from t1 order by (math+english)  desc;
+ &#x663E;&#x793A;&#x603B;&#x5206;&#x7B2C;&#x4E00;&#x540D;
+ mysql&gt; select name,english from t1;
+
+ mysql&gt; select max(english) from t1;
+ &#x663E;&#x793A;&#x82F1;&#x8BED;&#x7684;&#x6700;&#x9AD8;&#x5206;
+ mysql&gt; select min(english) from t1;
+ &#x663E;&#x793A;&#x82F1;&#x8BED;&#x7684;&#x6700;&#x4F4E;&#x5206;
+
+ mysql&gt; select name,english from t1 where english in (select max(english) from t1);
+  &#x5B50;&#x67E5;&#x8BE2;
+ &#x663E;&#x793A;&#x82F1;&#x8BED;&#x7684;&#x6700;&#x9AD8;&#x5206;
+</code></pre>
+</li>
+<li><p>and or not &#x903B;&#x8F91;&#x8FD0;&#x7B97;&#xFF1A;
+ ```shell
+ 1.and
+ mysql&gt; select * from t1 where math &gt;= 60 and english &gt;= 60;</p>
+<p> 2.or
+ mysql&gt; select * from t1 where math &gt;= 60 or english &gt;= 60;      &#x5176;&#x4E2D;&#x4E00;&#x79D1;&#x53CA;&#x683C;</p>
+</li>
+</ol>
+<pre><code>3.not
+
+mysql&gt; select * from t1 where math &gt;= 60 and not  english &gt;= 60;
++------+--------+------+---------+
+| id   | name   | math | english |
++------+--------+------+---------+
+|    3 | wangwu |   65 |      30 |
+|    5 | liu3   |   85 |      43 |
++------+--------+------+---------+
+2 rows in set (0.00 sec)
+```
+</code></pre><ol>
+<li>mysql&#x5E38;&#x7528;&#x51FD;&#x6570; sum() avg() max() min() count()&#xFF1A;
+ ```shell
+ mysql&gt; select name,sum(math),sum(english) from t1;
+ +----------+-----------+--------------+
+ | name     | sum(math) | sum(english) |
+ +----------+-----------+--------------+
+ | zhangsan |       215 |          252 |
+ +----------+-----------+--------------+
+ 1 row in set (0.00 sec)</li>
+</ol>
+<pre><code>mysql&gt; select name,avg(math),avg(english) from t1;
++----------+-----------+--------------+
+| name     | avg(math) | avg(english) |
++----------+-----------+--------------+
+| zhangsan |   53.7500 |      63.0000 |
++----------+-----------+--------------+
+1 row in set (0.00 sec)
+
+mysql&gt; select name,max(english) from t1;
++----------+--------------+
+| name     | max(english) |
++----------+--------------+
+| zhangsan |           90 |
++----------+--------------+
+1 row in set (0.00 sec)
+
+mysql&gt; select name,min(english) from t1;
++----------+--------------+
+| name     | min(english) |
++----------+--------------+
+| zhangsan |           33 |
++----------+--------------+
+1 row in set (0.00 sec)
+
+mysql&gt; select count(*) from t1;
++----------+
+| count(*) |
++----------+
+|        4 |
++----------+
+1 row in set (0.00 sec)
+
+
+mysql&gt; select max(english) - min(math) from t1; --&#x82F1;&#x8BED;&#x7684;&#x6700;&#x9AD8;&#x5206;&#x4E0E;&#x6570;&#x5B66;&#x6700;&#x4F4E;&#x7684;&#x5DEE;&#x8DDD;
++--------------------------+
+| max(english) - min(math) |
++--------------------------+
+|                       50 |
++--------------------------+
+1 row in set (0.00 sec)
+
+
+mysql&gt; select * from t1 order by english desc limit 3;
++------+----------+------+---------+
+| id   | name     | math | english |
++------+----------+------+---------+
+|    1 | zhangsan |   70 |      90 |
+|    4 | lisi02   |   55 |      69 |
+|    2 | lisi     |   50 |      60 |
++------+----------+------+---------+
+3 rows in set (0.00 sec)
+
+
+mysql&gt; select * from t1 order by english asc limit 1,2; &#x663E;&#x793A;&#x7B2C;&#x4E8C;&#x540D;&#x548C;&#x7B2C;&#x4E09;&#x540D;
++------+--------+------+---------+
+| id   | name   | math | english |
++------+--------+------+---------+
+|    4 | lisi02 |   55 |      69 |
+|    2 | lisi   |   50 |      60 |
++------+--------+------+---------+
+2 rows in set (0.00 sec)
+
+
+mysql&gt; select * from ceshi1.t1 where math &gt;= 60 or english &gt;=60 ;
++------+----------+------+---------+
+| id   | name     | math | english |
++------+----------+------+---------+
+|    1 | zhangsan |   70 |      90 |
+|    2 | lisi     |   50 |      60 |
+|    4 | lisi02   |   55 |      69 |
++------+----------+------+---------+
+3 rows in set (0.00 sec)
+```
+</code></pre><ol>
+<li><p>&#x590D;&#x5236;&#x8868;&#x7ED3;&#x6784; &#x8868;&#x7ED3;&#x6784;&#x7684;&#x590D;&#x5236;&#xFF1A;</p>
+<pre><code class="lang-shell"> mysql&gt; create table t3 like t1; --&#x590D;&#x5236;&#x8868;&#x7ED3;&#x6784;
+ mysql&gt; create database db03;
+ mysql&gt; use db03
+ mysql&gt;  create table t1(id int,name varchar(50));
+ mysql&gt; create table t2(id int,socre int);
+ mysql&gt; insert into t1 set id=1,name=&apos;lee&apos;;
+ mysql&gt;  insert into t1 set id=2,name=&apos;zhang&apos;;
+ mysql&gt;  insert into t1 set id=4,name=&apos;wang&apos;;
+ mysql&gt; insert into t2 set id=1,socre=&apos;90&apos;;
+ mysql&gt; insert into t2 set id=2,socre=&apos;100&apos;;
+ mysql&gt;  insert into t2 set id=3,socre=&apos;90&apos;;
+ mysql&gt; select * from t1;
+ mysql&gt; select * from t1,t2;      &#x7B1B;&#x5361;&#x5C14;&#x96C6;,2&#x5F20;&#x8868;&#x7684;&#x4E58;&#x65B9; 
+ +------+-------+------+-------+
+ | id   | name  | id   | socre |
+ +------+-------+------+-------+
+ |    1 | lee   |    1 |    90 |
+ |    2 | zhang |    1 |    90 |
+ |    4 | wang  |    1 |    90 |
+ |    1 | lee   |    2 |   100 |
+ |    2 | zhang |    2 |   100 |
+ |    4 | wang  |    2 |   100 |
+ |    1 | lee   |    3 |    90 |
+ |    2 | zhang |    3 |    90 |
+ |    4 | wang  |    3 |    90 |
+ +------+-------+------+-------+
+ 9 rows in set (0.00 sec)
+
+ mysql&gt;create table db03.t3 (id int,name varchar(50));
+ mysql&gt; insert into t3 select * from t1; --&#x590D;&#x5236;&#x8BB0;&#x5F55;
+ mysql&gt; select * from t3;
+ +------+-------+
+ | id   | name  |
+ +------+-------+
+ |    1 | lee   |
+ |    2 | zhang |
+ |    4 | wang  |
+ +------+-------+
+ 3 rows in set (0.00 sec)
+
+ &#x591A;&#x8868;&#x67E5;&#x8BE2;
+ mysql&gt; select t1.id,t1.name,t2.socre from t1,t2 where t1.id=t2.id;
+ +------+-------+-------+
+ | id   | name  | socre |
+ +------+-------+-------+
+ |    1 | lee   |    90 |
+ |    2 | zhang |   100 |
+ +------+-------+-------+
+ 2 rows in set (0.00 sec)
+</code></pre>
+</li>
+<li><p>&#x8868;&#x7684;&#x8FDE;&#x63A5;:&#x7EB5;&#x5411;&#x8FDE;&#x63A5;/&#x5185;&#x8FDE;&#x63A5;/&#x5DE6;&#x8FDE;&#x63A5;/&#x53F3;&#x8FDE;&#x63A5;&#xFF1A;</p>
+<p> ```shell
+ &#x5E38;&#x89C4;&#x67E5;&#x8868;:
+ mysql&gt; select <em> from t1,t2;
+ mysql&gt; select </em> from t1,t2 where t1.id=t2.id;
+ +------+-------+------+-------+
+ | id   | name  | id   | socre |
+ +------+-------+------+-------+
+ |    1 | lee   |    1 |    90 |
+ |    2 | zhang |    2 |   100 |
+ +------+-------+------+-------+
+ 2 rows in set (0.00 sec)</p>
+<p> &#x5DE6;&#x8FDE;&#x63A5;&#xFF08;&#x4EE5;&#x5DE6;&#x8868;&#x4E3A;&#x6807;&#x51C6;&#x8FDE;&#x63A5;&#x53F3;&#x8868;&#xFF09;:
+ letft join=left [outer] join</p>
+<p> mysql&gt; select * from t1 left outer join t2 ON t1.id=t2.id;
+ +------+-------+------+-------+
+ | id   | name  | id   | socre |
+ +------+-------+------+-------+
+ |    1 | lee   |    1 |    90 |
+ |    2 | zhang |    2 |   100 |
+ |    4 | wang  | NULL |  NULL |
+ +------+-------+------+-------+
+ 3 rows in set (0.00 sec)</p>
+</li>
+</ol>
+<pre><code>&#x53F3;&#x8FDE;&#x63A5;&#xFF08;&#x4EE5;&#x53F3;&#x8868;&#x4E3A;&#x6807;&#x51C6;&#x8FDE;&#x63A5;&#x5DE6;&#x8868;&#xFF09;:
+right join= right outer join
+mysql&gt; select * from t1 right outer join t2 ON t1.id=t2.id;
++------+-------+------+-------+
+| id   | name  | id   | socre |
++------+-------+------+-------+
+|    1 | lee   |    1 |    90 |
+|    2 | zhang |    2 |   100 |
+| NULL | NULL  |    3 |    90 |
++------+-------+------+-------+
+3 rows in set (0.00 sec)
+
+
+&#x5185;&#x8FDE;&#x63A5;:&#x53D6;&#x591A;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x96C6;
+mysql&gt; select * from t1 inner join t2 on t1.id=t2.id;
++------+-------+------+-------+
+| id   | name  | id   | socre |
++------+-------+------+-------+
+|    1 | lee   |    1 |    90 |
+|    2 | zhang |    2 |   100 |
++------+-------+------+-------+
+2 rows in set (0.00 sec)
+
+&#x7EB5;&#x5411;&#x8FDE;&#x63A5;:
+mysql&gt; select * from t1 union select * from t2;
++------+-------+
+| id   | name  |
++------+-------+
+|    1 | lee   |
+|    2 | zhang |
+|    4 | wang  |
+|    1 | 90    |
+|    2 | 100   |
+|    3 | 90    |
++------+-------+
+6 rows in set (0.00 sec)
+```
+</code></pre><ol>
+<li><p>&#x5217;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li><p>&#x6574;&#x6570;&#xFF1A;</p>
+<pre><code>create table t1(id tinyint(2), name varchar(50))
+TINYINT[(M)] [UNSIGNED] [ZEROFILL] [not null] [comment]
+</code></pre></li>
+<li><p>&#x5F88;&#x5C0F;&#x7684;&#x6574;&#x6570;&#x3002;&#x5E26;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;-128&#x5230;127&#x3002;&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;0&#x5230;255&#x3002;</p>
+<pre><code>MEDIUMINT[(M)] [UNSIGNED] [ZEROFILL]
+</code></pre></li>
+<li><p>&#x4E2D;&#x7B49;&#x5927;&#x5C0F;&#x7684;&#x6574;&#x6570;&#x3002;&#x5E26;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;-8388608&#x5230;8388607&#x3002;&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;0&#x5230;16777215&#x3002;</p>
+<pre><code>INT[(M)] [UNSIGNED] [ZEROFILL]
+</code></pre></li>
+<li><p>&#x666E;&#x901A;&#x5927;&#x5C0F;&#x7684;&#x6574;&#x6570;&#x3002;&#x5E26;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;-2147483648&#x5230;2147483647&#x3002;&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;0&#x5230;4294967295&#x3002;</p>
+<pre><code>  INTEGER[(M)] [UNSIGNED] [ZEROFILL]
+</code></pre><p>&#x8FD9;&#x662F;INT&#x7684;&#x540C;&#x4E49;&#x8BCD;&#x3002;</p>
+</li>
+<li><p>&#x5927;&#x6574;&#x6570;&#x3002;&#x5E26;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;-9223372036854775808&#x5230;9223372036854775807&#x3002;&#x65E0;&#x7B26;&#x53F7;&#x7684;&#x8303;&#x56F4;&#x662F;0&#x5230;18446744073709551615&#x3002;</p>
+<pre><code>BIGINT[(M)] [UNSIGNED] [ZEROFILL]
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<pre><code>mysql&gt; use db01
+mysql&gt; show tables;
++----------------+
+| Tables_in_db01 |
++----------------+
+| t1             |
+| t2             |
++----------------+
+2 rows in set (0.00 sec)
+
+mysql&gt; create table t4(id int ,name char(50),salary decimal(10,2));
+
+mysql&gt; desc t4;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| id     | int(11)       | YES  |     | NULL    |       |
+| name   | char(50)      | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+
+mysql&gt; insert into t4 set id=&apos;test01&apos; ,name=&apos;asdasdad&apos;,salary=&apos;dadadadasd&apos; ;
+
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+
+mysql&gt; show warnings;
++---------+------+--------------------------------------------------------------------+
+| Level   | Code | Message                                                            |
++---------+------+--------------------------------------------------------------------+
+| Warning | 1366 | Incorrect integer value: &apos;test01&apos; for column &apos;id&apos; at row 1         |
+| Warning | 1366 | Incorrect decimal value: &apos;dadadadasd&apos; for column &apos;salary&apos; at row 1 |
++---------+------+--------------------------------------------------------------------+
+2 rows in set (0.00 sec)
+
+mysql&gt; select * from t4;
++------+----------+--------+
+| id   | name     | salary |
++------+----------+--------+
+|    0 | asdasdad |   0.00 |
++------+----------+--------+
+1 row in set (0.00 sec)
+
+
+=============
+mysql&gt; create table t5(id tinyint);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; insert into t5 set id=-10;
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; select * from t5;
++------+
+| id   |
++------+
+|  -10 |
++------+
+1 row in set (0.00 sec)
+
+mysql&gt; insert into t5 set id=-300;
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql&gt; select * from t5;
++------+
+| id   |
++------+
+|  -10 |
+| -128 |
++------+
+2 rows in set (0.00 sec)
+
+
+mysql&gt; alter table t5 modify id tinyint  unsigned;
+mysql&gt; insert  t4 set id=2500;
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql&gt; select * from t5;
++------+
+| id   |
++------+
+|    0 |
+|    0 |
+|  250 |
+|  255 |
++------+
+4 rows in set (0.00 sec)
+    ```
+
+    ```shell
+    &#x6D6E;&#x70B9;&#x6570;   decimal&#x6307;&#x5B9A;&#x5C0F;&#x6570;&#x70B9;&#x7684;&#x4F4D;&#x6570;
+mysql&gt; alter table t5 add salary decimal(7,2) unsigned after id;
+mysql&gt; update t5 set salary=1000000 where id=255;
+mysql&gt; select * from t5;
++------+-----------+
+| id   | salary    |
++------+-----------+
+|    0 |      NULL |
+|    0 |      NULL |
+|  250 |      NULL |
+|  255 | 999999.99 |
+```
+</code></pre><p>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x7C7B;&#x578B;&#x6982;&#x8FF0;</p>
+<pre><code>```shell
+mysql&gt; alter table t5 add date date;
+
+mysql&gt; alter table t5 add datetime datetime;
+
+mysql&gt; alter table t5 add time TIMESTAMP;
+mysql&gt; insert into t5(id,salary,date,datetime) values(1,10000,&apos;2011-09-01&apos;,&apos;2011-09-01 11:28:01&apos;);
+mysql&gt; select * from t5;
++------+----------+---------------------+------------+---------------------+
+| id   | salary   | time                | date       | datetime            |
++------+----------+---------------------+------------+---------------------+
+|    1 | 10000.00 | 2011-09-01 11:28:27 | 2011-09-01 | 2011-09-01 11:28:01 |
++------+----------+---------------------+------------+---------------------+
+1 row in set (0.00 sec)
+```
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./di-yi-jie-ff1a-mysql-ru-men.html" class="navigation navigation-prev " aria-label="Previous page: 第一节：MySQL入门"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html" class="navigation navigation-next " aria-label="Next page: 第三节：mysql的概念以及mysql架构分析"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

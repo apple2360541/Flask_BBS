@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第五节：MySQL表约束 | SQL使用</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./di-liu-jie-ff1a-mysql-biao-de-guan-xi.html" />
+    
+    
+    <link rel="prev" href="./di-si-jie-ff1a-mysql-ri-zhi-guan-li.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5"
+        data-chapter-title="第五节：MySQL表约束"
+        data-filepath="di-wu-jie-ff1a-mysql-biao-yue-shu.md"
+        data-basepath="."
+        data-revision="Wed May 30 2018 12:21:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        MySQL教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="di-yi-jie-ff1a-mysql-ru-men.html">
+            
+                
+                    <a href="./di-yi-jie-ff1a-mysql-ru-men.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一节：MySQL入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二节：SQL使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+            
+                
+                    <a href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三节：mysql的概念以及mysql架构分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+            
+                
+                    <a href="./di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四节：mysql日志管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+            
+                
+                    <a href="./di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五节：MySQL表约束
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+            
+                
+                    <a href="./di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六节：MySQL表的关系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="di-qi-jie-ff1a-mysqlback.html">
+            
+                
+                    <a href="./di-qi-jie-ff1a-mysqlback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七节：mysqlback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+            
+                
+                    <a href="./di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八节：mysqlslave--xstrabackup
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >SQL使用</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mysql&#x8868;&#x7EA6;&#x675F;">MySQL&#x8868;&#x7EA6;&#x675F;</h1>
+<p>&#x7EA6;&#x675F;&#x662F;&#x4E00;&#x79CD;&#x9650;&#x5236;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x5BF9;&#x8868;&#x7684;&#x884C;&#x6216;&#x8005;&#x5217;&#x7684;&#x6570;&#x636E;&#x505A;&#x51FA;&#x9650;&#x5236;&#xFF0C;&#x6765;&#x786E;&#x4FDD;&#x8868;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x552F;&#x4E00;&#x6027;.
+&#x5728;mysql&#x5F53;&#x4E2D;&#x4E00;&#x822C;&#x6709;&#x4E00;&#x4E0B;&#x8FD9;&#x51E0;&#x79CD;&#x7EA6;&#x675F;&#xFF1A;</p>
+<ol>
+<li>&#x975E;&#x7A7A;&#x7EA6;&#x675F;&#x3002;</li>
+<li>&#x552F;&#x4E00;&#x7EA6;&#x675F;&#x3002;</li>
+<li>&#x4E3B;&#x952E;&#x7EA6;&#x675F;&#x3002;</li>
+<li>&#x81EA;&#x589E;&#x957F;&#x3002;</li>
+<li>&#x9ED8;&#x8BA4;&#x7EA6;&#x675F;&#x3002;</li>
+<li>&#x5916;&#x952E;&#x7EA6;&#x675F;&#x3002;</li>
+</ol>
+<h2 id="&#x8868;&#x7ED3;&#x6784;&#x64CD;&#x4F5C;&#xFF1A;">&#x8868;&#x7ED3;&#x6784;&#x64CD;&#x4F5C;&#xFF1A;</h2>
+<pre><code>ALTER TABLE &apos;tbname&apos;
+&#x589E;&#x52A0; &#xFF1A;ADD
+&#x5220;&#x9664; &#xFF1A;DROP 
+&#x4FEE;&#x6539; &#xFF1A;MODIFY  #&#x6539;&#x5217;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;
+            CHANGE  #&#x6539;&#x5217;&#x540D;&#x548C;&#x6570;&#x636E;&#x7C7B;&#x578B;
+            RENAME  #&#x6539;&#x8868;&#x540D;
+#ADD
+mysql&gt; ALTER TABLE `tb1` 
+    -&gt; ADD (`age` INT,
+    -&gt; `number` INT);
+
+#DROP
+mysql&gt; ALTER TABLE `tb1` 
+    -&gt; DROP `number`;
+
+#MODIFY
+mysql&gt; ALTER TABLE `tb1`
+    -&gt; MODIFY `age` VARCHAR(4);
+
+#CHANGE
+mysql&gt; ALTER TABLE `tb1`  
+    -&gt; CHANGE `age` `ages` INT;    
+
+#RENAME
+mysql&gt; ALTER TABLE `tb1` RENAME `tb2`;
+
+#&#x8868;&#x540D;&#x548C;&#x5B57;&#x6BB5;&#x540D;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4FEE;&#x6539;&#xFF0C;&#x5373;&#x4FBF;&#x662F;&#x5728;&#x5C01;&#x88C5;&#x5F97;&#x5F88;&#x597D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E5F;&#x8981;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E0A;&#x7EBF;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x66F4;&#x52A0;&#x4E0D;&#x8981;&#x4FEE;&#x6539;
+</code></pre><h2 id="&#x975E;&#x7A7A;&#x7EA6;&#x675F;">&#x975E;&#x7A7A;&#x7EA6;&#x675F;</h2>
+<p>&#x5C31;&#x662F;&#x9650;&#x5236;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x67D0;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;null&#x5B57;&#x6BB5;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;not null&#x5B57;&#x6BB5;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;
+<img src="https://upload-images.jianshu.io/upload_images/7342323-712ae6466985ad85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="">
+&#x6CE8;&#x610F;&#xFF1A;
+&#x5982;&#x679C;&#x4F60;&#x7684;&#x7EA6;&#x675F;&#x4E0D;&#x751F;&#x6548;&#x53EF;&#x4EE5;&#x5148;&#x8BBE;&#x7F6E;&#x4E00;&#x4E0B;sql_mode<code>set session sql_mode=&apos;STRICT_TRANS_TABLES&apos;</code>&#x3002;</p>
+<h2 id="&#x552F;&#x4E00;&#x7EA6;&#x675F;">&#x552F;&#x4E00;&#x7EA6;&#x675F;</h2>
+<p>&#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x552F;&#x4E00;&#x7EA6;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x4E00;&#x5217;&#x5F53;&#x4E2D;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6837;&#x7684;&#x503C;&#x3002;</p>
+<pre><code>#&#x6DFB;&#x52A0;&#x552F;&#x4E00;&#x7EA6;&#x675F;
+ALTER TABLE tbl_name ADD [CONSTRAINT[symbol]]
+UNIQUE [INDEX|KEY] [index_name] [index_type]
+(index_col_name)
+
+#&#x5220;&#x9664;&#x552F;&#x4E00;&#x7EA6;&#x675F;
+ALTERT TABLE tbl_name DROP {INDEX|KEY} index_name
+</code></pre><h2 id="&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;&#x503C;&#x4E0D;&#x80FD;&#x518D;&#x91CD;&#x590D;&#x7684;&#x63D2;&#x5165;">&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;&#x503C;&#x4E0D;&#x80FD;&#x518D;&#x91CD;&#x590D;&#x7684;&#x63D2;&#x5165;</h2>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-3b9a673c8c61de99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h2 id="&#x4E3B;&#x952E;&#x7EA6;&#x675F;">&#x4E3B;&#x952E;&#x7EA6;&#x675F;</h2>
+<p>&#x4E3B;&#x952E;&#x4FDD;&#x8BC1;&#x8BB0;&#x5F55;&#x7684;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x4E3B;&#x952E;&#x81EA;&#x52A8;&#x4E3A;NOT NULL
+&#x6BCF;&#x5F20;&#x6570;&#x636E;&#x8868;&#x53EA;&#x80FD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x4E3B;&#x952E;
+<code>NOT NULL + UNIQUE KEY</code>
+&#x4E00;&#x4E2A;UNIQUE KEY &#x53C8;&#x662F;&#x4E00;&#x4E2A;NOT NULL&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x88AB;&#x5F53;&#x505A;PRIMARY KEY&#x4E3B;&#x952E;
+&#x5F53;&#x4E00;&#x5F20;&#x8868;&#x91CC;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x4E3B;&#x952E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x7684;&#x975E;&#x7A7A;&#x4E14;&#x4E3A;&#x552F;&#x4E00;&#x7684;&#x5217;&#x88AB;&#x89C6;&#x4E3A;&#x6709;&#x4E3B;&#x952E;&#x3002;</p>
+<pre><code>#&#x6DFB;&#x52A0;&#x4E3B;&#x952E;&#x7EA6;&#x675F;
+ALTER TABLE tbl_name ADD [CONSTRAINT[sysbol]]
+PRIMARY KEY [index_type] (index_col_name)
+
+#&#x5220;&#x9664;&#x4E3B;&#x952E;&#x7EA6;&#x675F;
+ALTER TABLE tbl_name DROP PRIMARY KEY
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7342323-b5cbf4c2c946c5ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h3 id="&#x81EA;&#x589E;&#x957F;autoincrement">&#x81EA;&#x589E;&#x957F;AUTO_INCREMENT</h3>
+<p><code>AUTO_INCREMENT</code>&#x81EA;&#x52A8;&#x7F16;&#x53F7;&#xFF0C;&#x4E14;&#x5FC5;&#x987B;&#x4E0E;&#x4E3B;&#x952E;&#x7EC4;&#x5408;&#x4F7F;&#x7528;
+&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8D77;&#x59CB;&#x503C;&#x4E3A;1&#xFF0C;&#x6BCF;&#x6B21;&#x7684;&#x589E;&#x91CF;&#x4E3A;1&#x3002;
+&#x5F53;&#x63D2;&#x5165;&#x8BB0;&#x5F55;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E3A;AUTO_INCREMENT&#x6570;&#x636E;&#x5217;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x63D2;&#x5165;&#x7684;&#x503C;&#x4E0E;&#x5DF2;&#x6709;&#x7684;&#x7F16;&#x53F7;&#x91CD;&#x590D;&#xFF0C;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;AUTO_INCREMENT&#x6570;&#x636E;&#x5217;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x63D2;&#x5165;&#x7684;&#x503C;&#x5927;&#x4E8E;&#x5DF2;&#x7F16;&#x53F7;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x4F1A;&#x628A;&#x8BE5;&#x63D2;&#x5165;&#x5230;&#x6570;&#x636E;&#x5217;&#x4E2D;&#xFF0C;&#x5E76;&#x4F7F;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;&#x5C06;&#x4ECE;&#x8FD9;&#x4E2A;&#x65B0;&#x503C;&#x5F00;&#x59CB;&#x9012;&#x589E;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x4E00;&#x4E9B;&#x7F16;&#x53F7;&#x3002;&#x5982;&#x679C;&#x81EA;&#x589E;&#x5E8F;&#x5217;&#x7684;&#x6700;&#x5927;&#x503C;&#x88AB;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x5219;&#x5728;&#x63D2;&#x5165;&#x65B0;&#x8BB0;&#x5F55;&#x65F6;&#xFF0C;&#x8BE5;&#x503C;&#x88AB;&#x91CD;&#x7528;&#x3002;
+```<h1 id="&#x6DFB;&#x52A0;&#x81EA;&#x589E;&#x957F;">&#x6DFB;&#x52A0;&#x81EA;&#x589E;&#x957F;</h1>
+mysql&gt; ALTER TABLE <code>user</code> CHANGE <code>id</code> <code>id</code> INT NOT NULL AUTO_INCREMENT;
+mysql&gt; DESCRIBE <code>user</code>;
+mysql&gt; SELECT * FROM <code>user</code>;</li>
+</ol>
+<h1 id="&#x63D2;&#x5165;&#x503C;">&#x63D2;&#x5165;&#x503C;</h1>
+<p>mysql&gt; INSERT INTO <code>user</code>(<code>name</code>,<code>number</code>)
+    -&gt; VALUES(&apos;take&apos;,2),
+    -&gt; (&apos;which&apos;,4)
+    -&gt; ;<br>mysql&gt; SELECT * FROM <code>user</code>;</p>
+<h1 id="&#x5220;&#x9664;&#x81EA;&#x589E;&#x957F;">&#x5220;&#x9664;&#x81EA;&#x589E;&#x957F;</h1>
+<p>mysql&gt; ALTER TABLE <code>user</code> CHANGE <code>id</code> <code>id</code> INT NOT NULL ;
+mysql&gt; DESCRIBE <code>user</code>;</p>
+<pre><code>![](https://upload-images.jianshu.io/upload_images/7342323-a80c0ab849870678.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
+
+### &#x9ED8;&#x8BA4;&#x7EA6;&#x675F;
+</code></pre><h1 id="&#x6DFB;&#x52A0;&#x5220;&#x9664;&#x9ED8;&#x8BA4;&#x7EA6;&#x675F;">&#x6DFB;&#x52A0;/&#x5220;&#x9664;&#x9ED8;&#x8BA4;&#x7EA6;&#x675F;</h1>
+<p>ALTER TABLE tbl_name ALTER [COLUMN] col_name
+{SET DEFAULT literal | DROP DEFAULT}</p>
+<h1 id="&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;">&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;</h1>
+<p>mysql&gt; ALTER TABLE <code>user</code> ALTER <code>number</code> SET DEFAULT 0;
+mysql&gt; DESCRIBE <code>user</code>;    </p>
+<h1 id="&#x63D2;&#x5165;&#x503C;">&#x63D2;&#x5165;&#x503C;</h1>
+<p>mysql&gt; ALTER TABLE <code>user</code> CHANGE <code>id</code> <code>id</code> INT NOT NULL AUTO_INCREMENT;
+mysql&gt; INSERT INTO <code>user</code>(<code>name</code>) VALUES(&apos;rock&apos;);
+mysql&gt; SELECT * FROM <code>user</code>;</p>
+<pre><code>### &#x5916;&#x952E;&#x7EA6;&#x675F;
+</code></pre><h1 id="&#x5916;&#x952E;&#x7EA6;&#x675F;&#x8981;&#x6C42;&#x6570;&#x636E;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x53EA;&#x80FD;&#x4E3A;innodb">&#x5916;&#x952E;&#x7EA6;&#x675F;&#x8981;&#x6C42;&#x6570;&#x636E;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x53EA;&#x80FD;&#x4E3A;InnoDB</h1>
+<h1 id="&#x67E5;&#x770B;&#x5F53;&#x524D;mysql&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;">&#x67E5;&#x770B;&#x5F53;&#x524D;mysql&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;</h1>
+<p>SHOW ENGINES;</p>
+<h1 id="&#x7F16;&#x8F91;&#x6570;&#x636E;&#x8868;&#x7684;&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x5F15;&#x64CE;">&#x7F16;&#x8F91;&#x6570;&#x636E;&#x8868;&#x7684;&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x5F15;&#x64CE;</h1>
+<p>MySQL&#x914D;&#x7F6E;&#x6587;&#x4EF6;  -&gt;/etc/my.cnf
+[mysqld]
+default-storage-engine=INNODB</p>
+<h1 id="&#x6539;&#x5B8C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8981;&#x91CD;&#x542F;&#x670D;">&#x6539;&#x5B8C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8981;&#x91CD;&#x542F;&#x670D;</h1>
+<p>sudo service mysqld restart
+```
+<img src="https://upload-images.jianshu.io/upload_images/7342323-b8fba378d1f407a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./di-si-jie-ff1a-mysql-ri-zhi-guan-li.html" class="navigation navigation-prev " aria-label="Previous page: 第四节：mysql日志管理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./di-liu-jie-ff1a-mysql-biao-de-guan-xi.html" class="navigation navigation-next " aria-label="Next page: 第六节：MySQL表的关系"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

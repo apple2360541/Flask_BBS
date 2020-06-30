@@ -1,0 +1,49 @@
+{% extends  "front/front_signbase.html" %}
+{% from  "common/_macros.html" import static %}
+{% block title %}注册{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ static("front/css/front_signbase.css") }}">
+    <script src="{{ static("front/js/signup.js") }}"></script>
+{% endblock %}
+{% block  page_title %}知了课堂登录{% endblock %}
+{% block signbox %}
+
+    <div class="form-group">
+        <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="手机号" name="telephone">
+            <span class="input-group-btn"><button id="send-code" class="btn btn-default">发送验证码</button></span>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="短信验证码" name="code">
+
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="用户名" name="username">
+
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="密码" name="password">
+
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="确认密码" name="re_password">
+
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="图形验证码" name="graph_captcha">
+        <span class="input-group-abdon captcha-abdon">
+                    <img class="captcha-img" id="captcha-img" src="{{ url_for("front.graph_captcha") }}" alt="">
+                </span>
+    </div>
+    <div class="form-button">
+
+        <button class="btn btn-warning btn-block" id="register">立即注册</button>
+    </div>
+{% endblock %}

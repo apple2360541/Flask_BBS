@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>common index</title>
+</head>
+<body>
+<form action="" method="post">
+    <input type="text" name="username" placeholder="请输入用户名">
+{#     <meta name="csrf_token" content="{{ csrf_token() }}">#}
+    <input type="text" name="csrf_token" value="{{ csrf_token() }}" hidden>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

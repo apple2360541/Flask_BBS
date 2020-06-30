@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第四节：mysql日志管理 | SQL使用</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./di-wu-jie-ff1a-mysql-biao-yue-shu.html" />
+    
+    
+    <link rel="prev" href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4"
+        data-chapter-title="第四节：mysql日志管理"
+        data-filepath="di-si-jie-ff1a-mysql-ri-zhi-guan-li.md"
+        data-basepath="."
+        data-revision="Wed May 30 2018 12:21:12 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        MySQL教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="di-yi-jie-ff1a-mysql-ru-men.html">
+            
+                
+                    <a href="./di-yi-jie-ff1a-mysql-ru-men.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一节：MySQL入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二节：SQL使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+            
+                
+                    <a href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三节：mysql的概念以及mysql架构分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+            
+                
+                    <a href="./di-si-jie-ff1a-mysql-ri-zhi-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四节：mysql日志管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+            
+                
+                    <a href="./di-wu-jie-ff1a-mysql-biao-yue-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五节：MySQL表约束
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+            
+                
+                    <a href="./di-liu-jie-ff1a-mysql-biao-de-guan-xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六节：MySQL表的关系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="di-qi-jie-ff1a-mysqlback.html">
+            
+                
+                    <a href="./di-qi-jie-ff1a-mysqlback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七节：mysqlback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+            
+                
+                    <a href="./di-ba-jie-ff1a-mysqlslave-xstrabackup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八节：mysqlslave--xstrabackup
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >SQL使用</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mysql&#x65E5;&#x5FD7;&#x7BA1;&#x7406;">MySQL&#x65E5;&#x5FD7;&#x7BA1;&#x7406;</h1>
+<h2 id="mysql&#x65E5;&#x5FD7;&#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728;datadir">mysql&#x65E5;&#x5FD7;(&#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728;datadir):</h2>
+<p>&#x540C;&#x5927;&#x591A;&#x6570;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E00;&#x6837;&#xFF0C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x662F;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x91CD;&#x8981;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x3002;MySQL&#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x5E38;&#x5305;&#x62EC;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF0C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x65E5;&#x5FD7;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B9A;&#x4F4D;mysqld&#x5185;&#x90E8;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x6027;&#x80FD;&#x6545;&#x969C;&#xFF0C;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x7684;&#x53D8;&#x66F4;&#x5386;&#x53F2;&#xFF0C;&#x7528;&#x6237;&#x6062;&#x590D;&#x6570;&#x636E;&#x5E93;&#x7B49;&#x7B49;&#x3002;</p>
+<ol>
+<li>&#x9519;&#x8BEF;&#x65E5;&#x5FD7; &#xFF0D;&#xFF0D;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;,&#x8BB0;&#x5F55;mysql&#x670D;&#x52A1;&#x7AEF;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4EA7;&#x751F;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
+&#x4EE5;&#x53CA;mysql&#x542F;&#x52A8;&#x548C;&#x5173;&#x95ED;&#x65F6;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;</li>
+<li>&#x67E5;&#x8BE2;&#x65E5;&#x5FD7; &#xFF0D;&#xFF0D;select * from xxx; show databases;&#x8BB0;&#x5F55;&#x5EFA;&#x7ACB;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x548C;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;</li>
+<li>&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7; &#xFF0D;&#xFF0D;&#x6162;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x9600;&#x503C;&#xFF0C;&#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x9600;&#x503C;&#x5C31;&#x662F;&#x6162;&#x67E5;&#x8BE2;</li>
+<li>binlog&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7; &#xFF0D;&#xFF0D;&#x8BB0;&#x5F55;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x589E;&#x3001;&#x5220;&#x3001;&#x6539;&#x7684;SQL&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65E5;&#x5FD7;&#x505A;&#x589E;&#x91CF;&#x5907;&#x4EFD;</li>
+<li>&#x4E8B;&#x52A1;&#x65E5;&#x5FD7; &#xFF0D;&#xFF0D;&#x6BCF;&#x6B21;&#x589E;&#x3001;&#x5220;&#x3001;&#x6539;&#x7684;SQL&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x628A;&#x64CD;&#x4F5C;SQL&#x8BED;&#x53E5;&#x5199;&#x5728;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;&#xFF0C;&#x53EA;innodb&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x624D;&#x652F;&#x6301;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;</li>
+<li>relay-binlog &#xFF0D;&#xFF0D;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x65E5;&#x5FD7;&#xFF0C;&#x4ECE;&#x673A;&#x5668;&#x4E0A;&#x4ECE;&#x4E3B;&#x673A;&#x5668;&#x590D;&#x5236;&#x8FC7;&#x6765;&#x65E5;&#x5FD7;&#xFF0C;&#x6839;&#x636E;&#x65E5;&#x5FD7;&#x6765;&#x540C;&#x6B65;&#x6570;&#x636E;&#x3002; &#x8BB0;&#x5F55;&#x6240;&#x6709;&#x66F4;&#x6539;&#x6570;&#x636E;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x8FD8;&#x7528;&#x4E8E;&#x590D;&#x5236;&#x3002;</li>
+</ol>
+<h2 id="&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;">&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;</h2>
+<pre><code class="lang-shell"># &#x67E5;&#x770B;mysql&#x7248;&#x672C;
+mysql&gt; show variables like &apos;%version%&apos;;  
++-------------------------+------------------------------+
+| Variable_name           | Value                        |
++-------------------------+------------------------------+
+| innodb_version          | 5.6.37                       |
+| protocol_version        | 10                           |
+| slave_type_conversions  |                              |
+| version                 | 5.6.37                       |
+| version_comment         | MySQL Community Server (GPL) |
+| version_compile_machine | x86_64                       |
+| version_compile_os      | Linux                        |
++-------------------------+------------------------------+
+7 rows in set (0.01 sec)
+# &#x67E5;&#x770B;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;
+mysql&gt;  show variables like &apos;%general%&apos;; 
++------------------+-------------------------------------+
+| Variable_name    | Value                               |
++------------------+-------------------------------------+
+| general_log      | OFF                                 |
+| general_log_file | /var/lib/mysql/vagrant-centos65.log | #&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;
++------------------+-------------------------------------+
+2 rows in set (0.00 sec)
+# &#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;
+mysql&gt;  set @@global.general_log=1;  
+Query OK, 0 rows affected (0.00 sec)
+#&#x67E5;&#x770B;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;
+[root@vagrant-centos65 mysql]# cat vagrant-centos65.log 
+/usr/sbin/mysqld, Version: 5.6.37 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+170929 15:37:08    20 Query     show variables like &apos;%general%&apos;
+170929 15:37:12    20 Query     set @@global.general_log=0
+/usr/sbin/mysqld, Version: 5.6.37 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+170929 15:38:37    20 Query     show databases
+170929 15:38:38    20 Query     SELECT DATABASE()
+                   20 Init DB   aaaa
+                   20 Query     show databases
+                   20 Query     show tables
+                   20 Field List        t1 
+                   20 Field List        t2 
+                   20 Field List        t3 
+170929 15:38:50    20 Query     show tables
+170929 15:38:54    20 Query     select * from t1
+170929 15:38:56    20 Query     select * from t2
+170929 15:38:59    20 Quit
+</code></pre>
+<h3 id="&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#xFF1A;">&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#xFF1A;</h3>
+<pre><code class="lang-shell">mysql &#x542F;&#x52A8;&#x548C;&#x5173;&#x95ED; &#xFF0C;&#x62A5;&#x9519;
+
+mysql&gt;  show variables like &apos;%error%&apos;;
++--------------------+------------------------------+
+| Variable_name      | Value                        |
++--------------------+------------------------------+
+| error_count        | 0                            |
+| log_error          | /data2/rhel6.example.com.err |
+| max_connect_errors | 10                           |
+| max_error_count    | 64                           |
+| slave_skip_errors  | OFF                          |
++--------------------+------------------------------+
+5 rows in set (0.00 sec)
+
+[root@rhel6 ~]# vim /data2/rhel6.example.com.err 
+[root@rhel6 ~]# : &gt; /data2/rhel6.example.com.err 
+[root@rhel6 ~]# mysqladmin -uroot shutdown
+[root@rhel6 mysql-glibc]# ./bin/mysqld_safe &amp;
+
+
+&#x6A21;&#x62DF;&#x6545;&#x969C;&#xFF1A;
+[root@rhel6 data2]# mkdir bak
+[root@rhel6 data2]# mv mysql bak/
+[root@rhel6 mysql-glibc]# mysqladmin -uroot shutdown
+
+[root@rhel6 data2]# cd /opt/mysql-glibc/
+[root@rhel6 mysql-glibc]# ./bin/mysqld_safe &amp;
+
+[root@rhel6 mysql-glibc]# cat /data2/rhel6.example.com.err 
+ [ERROR]
+ [root@rhel6 mysql-glibc]# cd /data2/
+ [root@rhel6 data2]# mv bak/mysql/ ./
+
+ [root@rhel6 mysql-glibc]# ./bin/mysqld_safe &amp;
+</code></pre>
+<h3 id="&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;binlog&#x65E5;&#x5FD7;&#xFF1A;">&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;(binlog&#x65E5;&#x5FD7;)&#xFF1A;</h3>
+<p>&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF08;&#x53C8;&#x53EB;binlog&#x65E5;&#x5FD7;&#xFF09;&#x8BB0;&#x5F55;&#x4E86;&#x6240;&#x6709;&#x589E;&#x5220;&#x6539;&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5305;&#x62EC;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF0C;&#x8BED;&#x53E5;&#x662F;&#x4EE5;&#x201C;&#x4E8B;&#x4EF6;&#x201D;&#x7684;&#x5F62;&#x5F0F;&#x4FDD;&#x5B58;&#x7684;&#xFF0C;&#x5B83;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x66F4;&#x6539;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x8BE5;&#x65E5;&#x5FD7;&#x7684;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x662F;&#xFF1A;&#x6570;&#x636E;&#x7684;&#x6062;&#x590D;&#x4E0E;&#x6570;&#x636E;&#x7684;&#x590D;&#x5236;&#x3002;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x7684;&#x6062;&#x590D;&#xFF1A;MySQL&#x672C;&#x8EAB;&#x5177;&#x5907;&#x6570;&#x636E;&#x5907;&#x4EFD;&#x548C;&#x6062;&#x590D;&#x529F;&#x80FD;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x6BCF;&#x5929;&#x5348;&#x591C;12:00&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7684;&#x5907;&#x4EFD;&#x3002;&#x5982;&#x679C;&#x67D0;&#x5929;&#xFF0C;&#x4E0B;&#x5348;13:00,&#x6570;&#x636E;&#x5E93;&#x51FA;&#x73B0;&#x6545;&#x969C;&#xFF0C;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x4E22;&#x5931;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x89E3;&#x51B3;&#x601D;&#x8DEF;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5C06;&#x524D;&#x4E00;&#x5929;&#x5348;&#x591C;12:00&#x7684;&#x6570;&#x636E;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x6062;&#x590D;&#x5230;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4F7F;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x56DE;&#x590D;&#x4ECE;&#x524D;&#x4E00;&#x5929;&#x5348;&#x591C;12:00&#x5230;&#x5F53;&#x5929;13:00&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x590D;&#x5236;&#xFF1A;MySQL&#x652F;&#x6301;&#x4E3B;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x95F4;&#x7684;&#x6570;&#x636E;&#x590D;&#x5236;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8BE5;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5197;&#x4F59;&#x673A;&#x5236;&#x4EE5;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5E93;&#x7684;&#x53EF;&#x7528;&#x6027;&#x548C;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x5E93;&#x5FB7;&#x6027;&#x80FD;&#x3002;MySQL&#x6B63;&#x662F;&#x901A;&#x8FC7;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7684;&#x4F20;&#x9012;&#x3002;&#x4E3B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x5185;&#x5BB9;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;&#x5404;&#x4E2A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x5E76;&#x5728;&#x6BCF;&#x4E2A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x4E86;&#x4E3B;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;
+```shell
+mysql&gt;  show variables like &apos;%bin%&apos;;   #&#x67E5;&#x770B;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x53C2;&#x6570;
++-----------------------------------------+----------------------+
+| Variable_name                           | Value                |
++-----------------------------------------+----------------------+
+| binlog_cache_size                       | 32768                |   #    &#x4E3A;&#x6BCF;&#x4E2A;session &#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x5728;&#x4E8B;&#x52A1;&#x8FC7;&#x7A0B;&#x4E2D;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x7F13;&#x5B58;&#x3002;
+| binlog_direct_non_transactional_updates | OFF     |
+| binlog_format                           | STATEMENT         |
+| binlog_stmt_cache_size                  | 32768             |
+| innodb_locks_unsafe_for_binlog          | OFF           |
+| log_bin                                 | OFF                            |
+| log_bin_trust_function_creators         | OFF              |
+| max_binlog_cache_size | 18446744073709547520 |
+| max_binlog_size                         | 1073741824         |
+| max_binlog_stmt_cache_size|18446744073709547520 |
+| sql_log_bin                             | ON                            |
+| sync_binlog                             | 0                               |
++-----------------------------------------+----------------------+
+12 rows in set (0.00 sec)</li>
+</ol>
+<p>mysql&gt; set global log_bin=on;
+ERROR 1238 (HY000): Variable &apos;log_bin&apos; is a read only variable</p>
+<pre><code>
+### &#x5F00;&#x542F;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;
+```shell
+#binary log
+log-bin  =      /abc/logs/mysqld-bin
+log-bin-index = /abc/logs/binlog_index
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/7342323-e1bc1fd5c1d135c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<p>&#x91CD;&#x542F;&#x4E00;&#x4E0B;mysql &#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x5C31;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;&#x4E86;</p>
+<h3 id="&#x67E5;&#x770B;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF1A;">&#x67E5;&#x770B;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF1A;</h3>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-f8f68d7dfd648606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h3 id="binlog&#x65E5;&#x5FD7;&#x5C5E;&#x6027;&#xFF1A;">binlog&#x65E5;&#x5FD7;&#x5C5E;&#x6027;&#xFF1A;</h3>
+<pre><code class="lang-shell">mysqld-bin.000001 | &#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x4F1A;&#x4EA7;&#x751F;&#x65B0;&#x7684;&#x65E5;&#x5FD7; 1.&#x8D85;&#x8FC7;1G 2.&#x5173;&#x95ED;mysqld 3.&#x622A;&#x65AD;&#x65E5;&#x5FD7;
+mysql&gt; flush logs; --&#x622A;&#x65AD;&#x65E5;&#x5FD7; &#x4F1A;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x4E00;&#x4E2A;Binlog&#x65E5;&#x5FD7;&#x6587;&#x4EF6;
+</code></pre>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-3c414acc5b20b2c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/578" alt=""></p>
+<p>&#x6CE8;&#x610F;:
+&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x65E5;&#x5FD7;
+&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x53EA;&#x8BB0;&#x5F55; &#x589E;&#x5220;&#x6539;&#xFF0C; &#x4E0D;&#x4F1A;&#x8BB0;&#x5F55;&#x67E5;&#x8BE2;&#x7684;&#x8BED;&#x53E5;</p>
+<h3 id="&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7BA1;&#x7406;&#xFF1A;">&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7BA1;&#x7406;&#xFF1A;</h3>
+<pre><code class="lang-shell">mysql&gt; show binary logs;                    --&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x6709;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;
+mysql&gt; PURGE BINARY LOGS BEFORE &apos;2012-03-26 16:21:00&apos;;
+mysql&gt; purge binary logs to &apos;mysqld.000005&apos;;        --&#x5220;&#x9664;mysqld.000005&#x4EE5;&#x524D;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;,&#x4F46;&#x4E0D;&#x5220;&#x9664;&#x65E5;&#x5FD7;&#x7EC8;&#x7ED3;&#x70B9;
+shell&gt;mysqlbinlog /data2/mysqld.bin00001        --&#x67E5;&#x770B;binlog&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;
+shell&gt; mysqladmin  -uroot -p456 flush-logs &#x622A;&#x65AD;&#x65E5;&#x5FD7;
+mysql&gt; show master status   --&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;
+mysql&gt; flush logs;      --&#x622A;&#x65AD;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;
+mysql&gt; flush master;    --&#x6E05;&#x7A7A;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;
+
+
+log_slow_queries=/mysql/logs/slow   --&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;
+long-query-time=1               --&#x53EA;&#x8981;&#x8D85;&#x8FC7;1&#x79D2;&#x7684;&#x67E5;&#x8BE2;&#x5C06;&#x88AB;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#xFF0C;&#x4EE5;&#x4FBF;&#x88AB;&#x505A;&#x8C03;&#x4F18;&#x65F6;&#x505A;&#x53C2;&#x8003;&#x3002;
+</code></pre>
+<h2 id="&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF1A;">&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF1A;</h2>
+<p>&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x662F;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;&#x53C2;&#x6570;long_query_time(&#x5355;&#x4F4D;&#xFF1A;&#x79D2;)&#xFF0C;&#x7684;SQL&#x8BED;&#x53E5;&#x65E5;&#x5FD7;&#x3002;&#x4E3A;&#x4E86;&#x83B7;&#x5F97;&#x8868;&#x9501;&#xFF0C;&#x800C;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4E0D;&#x7B97;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;log-slow-queries=[file_name]&#x9009;&#x9879;&#x6765;&#x542F;&#x52A8;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x529F;&#x80FD;&#x3002;&#x548C;&#x524D;&#x9762;&#x7684;&#x65E5;&#x5FD7;&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;file_name&#xFF0C;&#x90A3;&#x4E48;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x5728;datedir&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4E14;&#x9ED8;&#x8BA4;&#x7684;&#x540D;&#x5B57;&#x4E3A;host_name-slow.log&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x6765;&#x4F18;&#x5316;&#x6211;&#x4EEC;&#x7684;SQL&#x8BED;&#x53E5;&#x548C;&#x5EFA;&#x7ACB;&#x65B0;&#x7684;&#x7D22;&#x5F15;&#x8FBE;&#x5230;&#x4F18;&#x5316;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<h3 id="&#x67E5;&#x8BE2;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;">&#x67E5;&#x8BE2;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;</h3>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-83d7b56e7d7a169b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt=""></p>
+<h3 id="&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;">&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;</h3>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-84dd5878f1e53936.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/652" alt=""></p>
+<h3 id="&#x8BBE;&#x7F6E;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x9608;&#x503C;">&#x8BBE;&#x7F6E;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x9608;&#x503C;</h3>
+<p><img src="https://upload-images.jianshu.io/upload_images/7342323-137acb41753993ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/661" alt=""></p>
+<h3 id="&#x6C38;&#x4E45;&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x548C;">&#x6C38;&#x4E45;&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x548C;</h3>
+<pre><code class="lang-shell">[root@rhel6 logs]# vim /etc/my.cnf 
+#slow log
+slow_query_log=on
+slow_query_log_file=/abc/logs/slow.log
+long_query_time=1
+---
+/etc/init.d/mysqld stop
+/etc/init.d/mysqld start
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./di-san-jie-ff1a-mysql-de-gai-nian-yi-ji-mysql-jia-gou-fen-xi.html" class="navigation navigation-prev " aria-label="Previous page: 第三节：mysql的概念以及mysql架构分析"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./di-wu-jie-ff1a-mysql-biao-yue-shu.html" class="navigation navigation-next " aria-label="Next page: 第五节：MySQL表约束"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
