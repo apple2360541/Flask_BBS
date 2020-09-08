@@ -1,0 +1,25 @@
+文
+章推送：
+1.发布了的文章都推送
+
+2.一个月只推送点击量最高的那一条文章
+
+文章表：
+
+字段名	字段类型	说明
+id	int	主键
+name	varchar	文章标题
+content	varchar	文章内容
+c_time	datetime	发布时间
+推送消息表：
+
+字段名	类型	说明
+id	int	主键
+book_id	int	文章的外键
+p_time	datetime	推送时间
+推送历史表：
+
+字段名	类型	说明
+id	int	主键
+book_id	int	文章的外键
+p_time	datetime	推送时间

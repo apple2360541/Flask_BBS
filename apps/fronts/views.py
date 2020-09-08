@@ -1,6 +1,6 @@
 from flask import (Blueprint,
                    views,
-                   request,
+                   request,jsonify,
                    render_template, make_response, session)
 from utils.captcha import Captcha
 from io import BytesIO
@@ -12,12 +12,31 @@ from .forms import SignupForm, LoginForm
 from .models import FontUser
 from ext import db
 from config import FRONT_USER_ID
-front = Blueprint("front", __name__)
 
+front = Blueprint("front", __name__)
+from ext import db
+from apps.fronts.models import Category
+
+def get_children(data,result):
+    if data.children is not None:
+        for i in data.children:
+            # array.append(i)
+            child= get_children(i)
 
 @front.route("/")
 def index():
-    return "front index "
+    import json
+    data = db.session.query(Category).filter(Category.parent_id == None).all()
+
+    for i in data:
+        print(i.name)
+        print(i.id)
+        for child in i.children:
+            print(child.name)
+            print(child.id)
+
+    return jsonify(data)
+    # return render_template("front/front_login.html")
 
 
 class LoginView(views.MethodView):
@@ -32,9 +51,9 @@ class LoginView(views.MethodView):
             remember = form.remember.data
             user = FontUser.query.filter_by(phone=telephone).first()
             if user and user.check_password(password):
-                session[FRONT_USER_ID]=user.id
+                session[FRONT_USER_ID] = user.id
                 if remember:
-                    session.permanent=True
+                    session.permanent = True
             else:
                 return restful.params_error("手机号或密码错误")
 

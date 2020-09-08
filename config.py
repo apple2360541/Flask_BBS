@@ -8,7 +8,7 @@ USERNAME = 'root'
 PASSWORD = 'apple2882960'
 DB_NAME = 'bbs'
 # dialect+driver://username:password@host:port/database
-DB_URI = 'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}?charset=utf8'.format(USERNAME=USERNAME,
+DB_URI = 'mysql+mysqlconnector://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}?charset=utf8'.format(USERNAME=USERNAME,
                                                                                              PASSWORD=PASSWORD,
                                                                                              HOST=HOST,
                                                                                              PORT=PORT, DB_NAME=DB_NAME)

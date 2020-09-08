@@ -1,0 +1,22 @@
+l
+ayui文档：https://www.layui.com/doc/modules/form.html
+实战一：关联多表导入异步任务
+两张表：
+
+category：
+
+字段名	类型	说明
+id	ID	主键
+name	varchar	分类名称
+desc	varchar	分类描述
+c_time	datatime	创建时间
+
+new:
+
+字段名	类型	说明
+id	int	主键
+title	varchar	标题
+url	varchar	连接
+new_time	varchar	新闻发布时间
+category_id	int	分类外键
+c_time	datetime	创建时间

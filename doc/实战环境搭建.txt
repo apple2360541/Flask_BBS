@@ -1,0 +1,11 @@
+pip install django==2.2.0
+pip install django-celery
+pip install redis==2.10.6
+pip install mysqlclient
+安装mysqlclient报错解决方案：
+unable to execute 'gcc': No such file or directory
+sudo apt-get install gcc
+apt-get install -y mysql-devel
+apt-get install libffi-devel -y
+apt-get install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
+udo apt-get install libffi-dev g++ libssl-dev

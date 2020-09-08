@@ -2,6 +2,12 @@ from ext import db
 import shortuuid
 from werkzeug.security import generate_password_hash, check_password_hash
 import enum
+from uuid import uuid4
+
+
+def gen_uuid():
+    return uuid4().hex
+
 
 from datetime import datetime
 
@@ -11,6 +17,11 @@ class Gender(enum.Enum):
     MALE = 1
     FEMALE = 2
     SECRET = 3
+
+
+class Common():
+    create_time = db.Column(db.DateTime, default=datetime.now)
+    update_time = db.Column(db.DateTime, default=datetime.now, onupdate=datetime.now)
 
 
 class FontUser(db.Model):
@@ -43,3 +54,22 @@ class FontUser(db.Model):
     def check_password(self, raw_password):
         result = check_password_hash(self.password, raw_password)
         return result
+
+
+# 自关联一对一和一对多
+class Category(db.Model):
+    __tablename__ = "t_category"
+    id = db.Column(db.String(32), primary_key=True, default=gen_uuid, comment="主键")
+    name = db.Column(db.String(20), nullable=False, comment="名字")
+    parent_id = db.Column(db.ForeignKey('t_category.id'), on_delete='CASCADE', onupdate='CASCADE', index=True)
+    parent = db.relationship('Category', remote_side=[id])
+    children = db.relationship('Category', remote_side=[parent_id])
+
+
+class FontGoods(db.Model, Common):
+    __tablename__ = 't_front_good'
+    id = db.Column(db.String(100), primary_key=True, default=shortuuid.uuid)
+    name = db.Column(db.String(50), nullable=False)
+    category_id = db.Column(db.ForeignKey('t_category.id'))
+    category = db.relationship('Category', backref=db.backref('goods'))
+
